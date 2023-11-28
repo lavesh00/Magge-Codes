@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+                                    <strong>Loops are categorized into</strong></p>
+<ol>
+    <li>
+        <strong>Entry Controlled Loop</strong>
+        <ol type="i">
+            <li>for</li>
+            <li>while</li>
+        </ol>
+    </li>
+    <li>
+        <strong>Exit Controlled Loop</strong>
+        <ol type="i">
+            <li>do while</li>
+        </ol>
+    </li>
+</ol>
+
+<p><strong>for loop</strong></p>
+<ul>
+    <li>It is an iterative or loop controlled statement.</li>
+    <li><code>for</code> is the keyword used as a loop control statement.</li>
+    <li><strong>Syntax:</strong></li>
+    <pre>
+        <code>for ( initialization ; condition ;  update_expression ) {
+            // Loop Body;     //body of for
+        }</code>
+    </pre>
+</ul>
+
+<p><strong>While loop</strong></p>
+<ul>
+    <li>It is a loop control statement or iterative statement.</li>
+    <li><code>while</code> is the keyword used as a loop control statement.</li>
+    <li><strong>Syntax:</strong></li>
+    <pre>
+        <code>initlialization;
+while (condition) {
+        //loop body
+update_expression;
+}</code>
+    </pre>
+    <li>In the above syntax, the condition is evaluated first; if it is true, then the loop's body is executed along with <code>update_expression</code>. Again, the condition will be checked & if it is true, then the body of the loop is executed again. Otherwise, execution will be terminated.</li>
+</ul>
+
+<p><strong>do-while</strong></p>
+<ul>
+    <li>It is an exit controlled loop.</li>
+    <li>It is a loop control statement or iterative statement.</li>
+    <li><code>do</code> & <code>while</code> are keywords  & used as loop control statement.</li>
+    <li><strong>Syntax:</strong></li>
+    <pre>
+        <code>Initlialization;
+do {
+        //loop body
+update_expression;
+} while (condition);</code>
+    </pre>
+    <li>In the above syntax, the loop is executed the first time before checking the condition; after that, the condition is evaluated for every iteration; if it is evaluated as true, then the body of the loop is executed along with <code>update_expression</code>. Otherwise, execution will be terminated.</li>
+</ul>
+
+<p><strong>Jump Control Instructions or Branching Statement</strong></p>
+<ul>
+    <li>The following are the jump control or branching statements supported by C++.</li>
+    <ul>
+        <li>break</li>
+        <li>continue</li>
+    </ul>
+</ul>
+
+<p><strong>break:</strong></p>
+<ul>
+    <li><code>break</code> is used to exit the execution of any loop.</li>
+    <li><code>break</code> is used to stop the execution of remaining cases in the switch.</li>
+    <li><strong>Syntax:</strong></li>
+    <pre>
+        <code>break;</code>
+    </pre>
+    <li>In the above syntax, we have only <code>break</code> keywords followed by a semicolon, and we can write this in a switch and any loops.</li>
+</ul>
+
+<p><strong>continue:</strong></p>
+<ul>
+    <li><code>continue</code> is used to continue the execution of the next iteration by skipping the current iteration of any loop.</li>
+    <li><strong>Note:</strong> <code>continue</code> cannot be used in switch-case.</li>
+    <li><strong>Syntax:</strong></li>
+    <pre>
+        <code>continue;</code>
+    </pre>
+    <li>In the above syntax, we have only the <code>continue</code> keyword followed by a semicolon, and we can write this in any loop.</li>
+</ul>
+
+                                        </p>
+                                    
+									
+									
+									<footer>
+										<a href="https://www.geeksforgeeks.org/cpp-loops/" class="button">Learn More</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 04</h2>
+										<p>
+											AIM: Programming using looping and unconditional statements
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Write a program to display the sum of N terms of even natural numbers. <br>
+                                                Hint:-Suppose value of N=6, then first N terms are 2+4+6+8+10+12 <br>
+                                                </h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int n, i, x, s;
+                                                
+                                                    cout << "Enter the value of n: ";
+                                                    cin >> n;
+                                                
+                                                    if (n == 0)
+                                                    {
+                                                        cout << "The sum is 0";
+                                                    }
+                                                    else if (n < 0)
+                                                    {
+                                                        cout << "Invalid Input ";
+                                                    }
+                                                    else
+                                                    {
+                                                        for (i = 0, s = 0, x = 2; i < n; i = i + 1, x = x + 2)
+                                                        {
+                                                            s = s + x;
+                                                        }
+                                                        cout << "The sum is:" << s;
+                                                    }
+                                                
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+					
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Write a program to find the sum of all numbers between M and N, where N>M.</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int n, m, s;
+                                                
+                                                    cout << "Enter the values of N & M (N should be greater than M):" << endl;
+                                                    cin >> n >> m;
+                                                
+                                                    if (n < m)
+                                                    {
+                                                        n = n + 1;
+                                                        for (s = 0; n < m; n = n + 1)
+                                                        {
+                                                            s = s + n;
+                                                        }
+                                                        cout << "The sum is " << s;
+                                                    }
+                                                    else
+                                                    {
+                                                        cout << "Invalid ";
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Write a program to find the power of a number XY; here, X is base and Y is exponent. </h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int x, y, i, a;
+                                                
+                                                    cout << "Enter the value of X and Y (X^Y)" << endl;
+                                                    cin >> x >> y;
+                                                
+                                                    if (x == 0 && y == 0)
+                                                    {
+                                                        cout << "Answer is Infinity";
+                                                    }
+                                                    else
+                                                    {
+                                                        for (i = 0, a = 1; i < y; i = i + 1)
+                                                        {
+                                                            a = a * x;
+                                                        }
+                                                        cout << "Answer is " << a;
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4: Write a program to count +ve number, -ve number and zeros until user want, make use of do while loop.</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int a, p = 0, n = 0, z = 0;
+                                                    char c;
+                                                
+                                                    do
+                                                    {
+                                                        cout << "Enter the number: ";
+                                                        cin >> a;
+                                                
+                                                        if (a == 0)
+                                                        {
+                                                            z = z + 1;
+                                                        }
+                                                        else if (a > 0)
+                                                        {
+                                                            p = p + 1;
+                                                        }
+                                                        else
+                                                        {
+                                                            n = n + 1;
+                                                        }
+                                                
+                                                        cout << "Do you wish to continue? (Y for yes, N for No)" << endl;
+                                                        cin >> c;
+                                                
+                                                    } while (c == 'y' || c == 'Y');
+                                                
+                                                    cout << "Positive: " << p << endl << "Negative: " << n << endl << "Zero: " << z;
+                                                
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Write a program to check whether a number is a strong number or not. </h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include&lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int n, n2, f, i, j, k;
+                                                
+                                                    cout << "Enter the number: ";
+                                                    cin >> n;
+                                                    n2 = n;
+                                                
+                                                    for (i = 0; n > 0; i = i + 1)
+                                                    {
+                                                        n = n / 10;
+                                                    }
+                                                    n = n2;
+                                                
+                                                    for (f = 1, k = 0, j = n % 10; i > 0;)
+                                                    {
+                                                        if (j == 0)
+                                                        {
+                                                            i = i - 1;
+                                                            n = n / 10;
+                                                            j = n % 10;
+                                                            k = k + 1;
+                                                            f = 1;
+                                                        }
+                                                
+                                                        f = f * j;
+                                                        j = j - 1;
+                                                
+                                                        if (j == 1)
+                                                        {
+                                                            i = i - 1;
+                                                            n = n / 10;
+                                                            j = n % 10;
+                                                            k = k + f;
+                                                            f = 1;
+                                                        }
+                                                    }
+                                                
+                                                    cout << endl << "Sum of factorial of digits: " << k;
+                                                
+                                                    if (k == n2)
+                                                    {
+                                                        cout << endl << n2 << " is a Strong Number" << endl;
+                                                    }
+                                                    else
+                                                    {
+                                                        cout << endl << n2 << " is not a Strong Number" << endl;
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 6: Write a program to accept a number from the user. Find and print the sum of digits of the number.</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int n1, n2, n3, i, s;
+                                                
+                                                    cout << "Enter the number: ";
+                                                    cin >> n1;
+                                                    n3 = n1;
+                                                
+                                                    for (n2 = 0; n1 > 0; n2++)
+                                                    {
+                                                        n1 = n1 / 10;
+                                                    }
+                                                
+                                                    for (i = 0, s = 0; i < n2; i++)
+                                                    {
+                                                        s = s + (n3 % 10);
+                                                        n3 = n3 / 10;
+                                                    }
+                                                    cout << endl << s;
+                                                
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 7: Write a program to accept a number from user and display if the number is Armstrong number. (Armstrong number is the number in any given number base, which forms the total of the same number, when each of its digits is raised to the power of the number of digits in the number.)</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                #include &lt;math.h&gt;
+                                                
+                                                int main()
+                                                {
+                                                    int n1, n2, n3, n4, i, a;
+                                                
+                                                    cout << "Enter the number: ";
+                                                    cin >> n1;
+                                                    n3 = n1, n4 = n1;
+                                                
+                                                    for (n2 = 0; n1 > 0; n2 = n2 + 1)
+                                                    {
+                                                        n1 = n1 / 10;
+                                                    }
+                                                
+                                                    for (i = 0, a = 0; i < n2; i = i + 1)
+                                                    {
+                                                        a = a + pow(n3 % 10, n2);
+                                                        n3 = n3 / 10;
+                                                    }
+                                                
+                                                    if (a == n4)
+                                                    {
+                                                        cout << n4 << " is an Armstrong number";
+                                                    }
+                                                    else
+                                                    {
+                                                        cout << n4 << " is not an Armstrong number";
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 8: Write a program to print the sum of the last and the first digit of a number the user gives.</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                #include &lt;math.h&gt;
+                                                
+                                                int main()
+                                                {
+                                                    int n1, n2, n3;
+                                                
+                                                    cout << "Enter the number: ";
+                                                    cin >> n1;
+                                                    n3 = n1;
+                                                
+                                                    for (n2 = 0; n1 > 0; n2 = n2 + 1)
+                                                        n1 = n1 / 10;
+                                                
+                                                    if (n2 == 1)
+                                                    {
+                                                        cout << "Invalid input" << endl;
+                                                    }
+                                                    else
+                                                    {
+                                                        for (n1 = n3; n2 > 1; n2--)
+                                                            n1 = n1 / 10;
+                                                        cout << "The sum is: " << (n3 % 10) + (n1) << endl;
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 9: Write a program to check whether the entered number is a palindrome.</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int no1, no2, rev;
+                                                
+                                                    cout << "Enter the Number : ";
+                                                    cin >> no1;
+                                                    no2 = no1;
+                                                
+                                                    for (rev = 0; no1 > 0;)
+                                                    {
+                                                        rev = rev * 10 + (no1 % 10);
+                                                        no1 = no1 / 10;
+                                                    }
+                                                
+                                                    if (no2 == rev)
+                                                    {
+                                                        cout << "The number is a Palindrome";
+                                                    }
+                                                    else
+                                                    {
+                                                        cout << "The number is not a Palindrome";
+                                                    }
+                                                
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+
+                                        <header>
+											<h3>Task 10: Implement a program to print all Leap Years from 1 to N using C++ program.</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int n, i;
+                                                
+                                                    cout << "Enter the year: ";
+                                                    cin >> n;
+                                                
+                                                    for (i = 1; i <= n; i++)
+                                                    {
+                                                        if (i % 4 == 0)
+                                                        {
+                                                            if (i % 100 == 0)
+                                                            {
+                                                                if (i % 400 == 0)
+                                                                {
+                                                                    cout << i << endl;
+                                                                }
+                                                            }
+                                                            else
+                                                                cout << i << endl;
+                                                        }
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+
+                                        <header>
+											<h3>Task 11: Write a program to check whether the entered number is prime or not. (make use of break) </h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int i, n, j;
+                                                    cout << "Enter the number: ";
+                                                    cin >> n;
+                                                
+                                                    if (n == 0 || n == 1)
+                                                        cout << n << " is a Special number";
+                                                    else if (n == 2 || n == 3)
+                                                        cout << n << " is a Prime number";
+                                                    else
+                                                    {
+                                                        for (i = 2, j = 0; i < n; i++)
+                                                            if (n % i == 0)
+                                                            {
+                                                                j = 1;
+                                                                break;
+                                                            }
+                                                        if (j == 1)
+                                                            cout << n << " is Not a prime number";
+                                                        else
+                                                            cout << n << " is a Prime number";
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+
+                                        <header>
+											<h3>Task 12: Write a program to print the entire uppercase and lowercase letters using a loop (use continue).</h3>
+										</header>
+										<p>
+                                            <pre>
+                                                #include &lt;iostream&gt;
+                                                using namespace std;
+                                                
+                                                int main()
+                                                {
+                                                    int i;
+                                                    for (i = 65; i <= 122; i++)
+                                                    {
+                                                        if (i > 90 && i < 97)
+                                                            continue;
+                                                        cout << " " << (char)i << endl;
+                                                    }
+                                                    return 0;
+                                                }
+                                                </pre>
+                                                
+                                        </p>
+                                        
+										
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

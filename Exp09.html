@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+
+
+<body>
+
+    <p>
+       <h3> If any programming language supports Encapsulation, Polymorphism, Inheritance and Abstraction etc. is called as OOP</h3>
+    </p>
+
+    <h3>Objects:</h3>
+    <p>
+        
+     Objects are instances of classes and represent real-world entities with attributes (data) and behaviors (methods/functions). <br>
+     They encapsulate data and the operations that can be performed on that data. <br>
+    </p>
+
+    <h3>Classes:</h3>
+    <p>
+        Classes are blueprint templates for creating objects. They define the properties and behaviors common to all objects of a certain type. <br>
+        Classes serve as a template for creating objects with specific attributes and methods. <br>
+    </p>
+
+    <h3>Encapsulation:</h3>
+    <p>
+        Encapsulation is the bundling of data (attributes) and methods that operate on the data into a single unit (class). <br>
+        It hides the internal state of an object and restricts access to the inner workings of an object, allowing for better control and security. <br>
+    </p>
+
+    <h3>Inheritance:</h3>
+    <p>
+        Inheritance is a mechanism that allows a class (subclass or derived class) to inherit properties and behaviors from another class (superclass or base class).
+        It promotes code reusability by allowing a new class to reuse the properties and behaviors of an existing class.
+    </p>
+
+    <h3>Polymorphism:</h3>
+    <p>
+        Polymorphism allows objects of different types to be treated as objects of a common type.
+        It can be achieved through method overloading (same method name with different parameters) and method overriding (providing a specific implementation of a method in a subclass).
+    </p>
+
+    <h3>Abstraction:</h3>
+    <p>
+        Abstraction involves simplifying complex systems by modeling classes based on the essential properties and behaviors they share.
+        It allows programmers to focus on the relevant details of an object and ignore unnecessary details.
+    </p>
+
+    <h3>Association:</h3>
+    <p>
+        Association represents a relationship between two or more objects where they are connected but not dependent on each other.
+        It can be one-to-one, one-to-many, or many-to-many.
+    </p>
+
+    <h3>Class and Objects Example:</h3>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        class Car {
+        public:
+            string brand;
+            int year;
+
+            void displayInfo() {
+            cout<<"Brand:";
+            cout<< brand; 
+            cout<<",Year: " 
+            cout<< year;
+            }
+        };
+
+        int main() {
+            Car myCar;
+            myCar.brand = "Toyota";
+            myCar.year = 2022;
+            myCar.displayInfo();
+
+            return 0;
+        }
+    </pre>
+
+    <h3>Constructor and Destructor Example:</h3>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        class Student {
+        public:
+            Student(string n, int a)
+            :name(n),age(a) {
+            cout << "Constructor 
+            called for " << name << endl;
+            }
+
+            void displayInfo() {
+            cout << "Name: " 
+            << name << ", Age: " 
+            << age << endl;
+            }
+
+            ~Student() {
+            cout << "Destructor called for "
+             << name << endl;
+            }
+
+        private:
+            string name;
+            int age;
+        };
+
+        int main() {
+            Student student1("Alice", 20);
+            student1.displayInfo();
+
+            return 0;
+        }
+    </pre>
+
+    <h3>Inheritance Example:</h3>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        class Shape {
+        public:
+            virtual void draw() {
+            cout << "Drawing a shape";
+            }
+        };
+
+        class Circle : public Shape {
+        public:
+            void draw() override {
+            cout << "Drawing a circle";
+            }
+        };
+
+        int main() {
+            Circle myCircle;
+            myCircle.draw();
+
+            return 0;
+        }
+    </pre>
+
+    <h3>Polymorphism Example:</h2>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        class Animal {
+        public:
+            virtual void sound() {
+            cout << "Animal sound" ;
+            }
+        };
+
+        class Dog : public Animal {
+        public:
+            void sound() override {
+                cout << "Bark" << endl;
+            }
+        };
+
+        int main() {
+            Animal* myAnimal = new Dog();
+            myAnimal->sound();
+
+            delete myAnimal;
+
+            return 0;
+        }
+    </pre>
+
+
+                                    </p>
+									<footer>
+										<a href="https://www.programiz.com/cpp-programming/oop" class="button">OOP</a>
+                                        <a href="https://www.programiz.com/cpp-programming/object-class" class="button">Object & Class</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 09</h2>
+										<p>
+											AIM: Programming using object-oriented programming concepts (using data members and member functions)
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Create a class named 'Student' with a string (char array) variable 'name' and an integer variable 'roll_no'. Assign the value of roll_no as 2  and that of name as "John" in main( ) function by creating an object of the class Student and display the same.
+                                                </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            #include &lt;cstring&gt;<br><br>
+                                        
+                                            class Student<br>
+                                            {<br>
+                                            public:<br>
+                                                char name[5];<br>
+                                                int roll_no;<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                Student s;<br>
+                                                s.roll_no = 2;<br>
+                                                strcpy(s.name, "John");<br>
+                                                cout << "Student name: " << s.name << endl << "Student Roll no.: " << s.roll_no;<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Create a class student having data members name, rollno & branch and define two member function getData( ) & display( ) for taking input & display the same. Write a complete C++ code for displaying the information of a student.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            class student<br>
+                                            {<br>
+                                            private:<br>
+                                                char name[10];<br>
+                                                int roll_no;<br>
+                                                char branch[5];<br>
+                                            public:<br>
+                                                void getData()<br>
+                                                {<br>
+                                                    cout << "Enter the Name Roll no. & Branch of the Student:" << endl;<br>
+                                                    cin >> name >> roll_no >> branch;<br>
+                                                }<br>
+                                                void display()<br>
+                                                {<br>
+                                                    cout << "Student Name: " << name << endl << "Roll no: " << roll_no << endl << "Branch:" << branch << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                student s;<br>
+                                                s.getData();<br>
+                                                s.display();<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Create a student record (name, rollno, marks of 3 subjects and score), calculate the average, store average in a score data member. If score<40, declare FAIL else PASS along with student details, maintain 10 students records. (make use of member function to read and display records) </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            class student<br>
+                                            {<br>
+                                            private:<br>
+                                                char name[10];<br>
+                                                int roll_no;<br>
+                                                int ms1;<br>
+                                                int ms2;<br>
+                                                int ms3;<br>
+                                                float score;<br>
+                                            public:<br>
+                                                void read()<br>
+                                                {<br>
+                                                    cout << "Enter the Name, Roll no & marks of the three subjects:" << endl;<br>
+                                                    cin >> name >> roll_no >> ms1 >> ms2 >> ms3;<br>
+                                                }<br>
+                                                void display()<br>
+                                                {<br>
+                                                    score = (ms1 + ms2 + ms3) / 3;<br>
+                                                    cout << "Student Name: " << name << endl
+                                                         << "Roll no: " << roll_no << endl
+                                                         << "Marks in Sub 1: " << ms1 << endl
+                                                         << "Marks in Sub 2: " << ms2 << endl
+                                                         << "Marks in Sub 3: " << ms3 << endl
+                                                         << "Score: " << score << endl; <br>
+                                        
+                                                    if (score < 40)<br>
+                                                        cout << "FAIL" << endl;<br>
+                                                    else<br>
+                                                        cout << "PASS" << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                student s[10];<br>
+                                                for (int i = 0; i < 10; i++)<br>
+                                                {<br>
+                                                    s[i].read();<br>
+                                                    s[i].display();<br>
+                                                }<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4: Write a program to overload sum function to perform addition of two integers, three integers and two floating-point numbers.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int sum(int x, int y)<br>
+                                            {<br>
+                                                int s = x + y;<br>
+                                                return s;<br>
+                                            }<br>
+                                        
+                                            int sum(int x, int y, int z)<br>
+                                            {<br>
+                                                int s = x + y + z;<br>
+                                                return s;<br>
+                                            }<br>
+                                        
+                                            double sum(double x, double y)<br>
+                                            {<br>
+                                                double s = x + y;<br>
+                                                return s;<br>
+                                            }<br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                cout << "Sum of two integers: " << sum(10, 20) << endl;<br>
+                                                cout << "Sum of three integers: " << sum(30, 40, 50) << endl;<br>
+                                                cout << "Sum of two floats: " << sum(16.12, 20.05);<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Create a class named “Shapes” with data member area. Write a member function “calArea” with two float parameters to calculate the area of rectangle and overload the same function having one float parameter to calculate the area of square.  </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            class Shapes<br>
+                                            {<br>
+                                            private:<br>
+                                                float area;<br>
+                                            public:<br>
+                                                void calArea(float x, float y)<br>
+                                                {<br>
+                                                    area = x * y;<br>
+                                                }<br>
+                                                void calArea(float x)<br>
+                                                {<br>
+                                                    area = x * x;<br>
+                                                }<br>
+                                                void display()<br>
+                                                {<br>
+                                                    cout << area << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                Shapes s1;<br>
+                                                s1.calArea(16.12, 20.05);<br>
+                                                cout << "Area of rectangle: ";<br>
+                                                s1.display();<br>
+                                                Shapes s2;<br>
+                                                s2.calArea(47.69);<br>
+                                                cout << "Area of Square: ";<br>
+                                                s2.display();<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>                                        
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p><strong> Loop (loop inside loop):</strong><br>
+                                        - A loop within another loop is known as nested loop.<br>
+                                        - Combinations of any loops are possible.<br>
+                                        <strong>Syntax:-</strong><br>
+                                        Nested For:<br>
+                                        for (initialization; condition; update) <br>
+                                        {<br>
+                                        &nbsp;&nbsp;for (initialization; condition; update) <br>
+                                        &nbsp;&nbsp;{<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;// body of inner loop <br>
+                                        &nbsp;&nbsp;}<br>
+                                        &nbsp;&nbsp;// body of outer loop <br>
+                                        }<br>
+                                        Nested While:<br>
+                                        while (condition) <br>
+                                        {<br>
+                                        &nbsp;&nbsp;while (condition) <br>
+                                        &nbsp;&nbsp;{<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;// body of inner loop <br>
+                                        &nbsp;&nbsp;}<br>
+                                        &nbsp;&nbsp;// body of outer loop <br>
+                                        }<br>
+                                        Nested Do While:<br>
+                                        do <br>
+                                        {<br>
+                                        &nbsp;&nbsp;do<br>
+                                        &nbsp;&nbsp;{<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;// body of inner loop <br>
+                                        &nbsp;&nbsp;}while (condition);<br>
+                                        &nbsp;&nbsp;// body of outer loop <br>
+                                        }while (condition);</p>
+                                        
+                                    
+									
+									
+									<footer>
+										<a href="https://www.geeksforgeeks.org/nested-loops-in-c-with-examples-2/" class="button">Learn More</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 05</h2>
+										<p>
+											Aim:  Programming using nested loops.
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1:Write a program to print following pattern using nested <br>
+                                                A <br>
+                                                BC <br>
+                                                DEF <br>
+                                                GHIJ <br>
+                                                KLMNO 
+                                                 </h3>
+										</header>
+                                            <p>
+                                                #include &lt;iostream&gt;<br>
+                                                using namespace std;<br>
+                                                int main()<br>
+                                                {<br>
+                                                &nbsp;&nbsp;int n, i, j, c = 65;<br>
+                                                <br>
+                                                &nbsp;&nbsp;cout << "Enter the number of rows(5): ";<br>
+                                                &nbsp;&nbsp;cin >> n;<br>
+                                                <br>
+                                                &nbsp;&nbsp;for (i = 1; i <= n; i++)<br>
+                                                &nbsp;&nbsp;{<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= i; j++, c++)<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << (char)c;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;cout << endl;<br>
+                                                &nbsp;&nbsp;}<br>
+                                                &nbsp;&nbsp;return 0;<br>
+                                                }
+                                                </p>
+                                                
+                                        
+                                        
+					
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Write a program to print following pattern using nested loop. <br>
+                                                ***** <br>
+                                                **** <br>
+                                                *** <br>
+                                                ** <br>
+                                                * 
+                                                </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int n, i, j;<br>
+                                            <br>
+                                            &nbsp;&nbsp;cout << "Enter the number of rows: ";<br>
+                                            &nbsp;&nbsp;cin >> n;<br>
+                                            <br>
+                                            &nbsp;&nbsp;for (i = n; i >= 1; i--)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= i; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << "*";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Write a program to print following pattern using nested loop, read number of lines to be displayed from user.   <br>     
+                                                &ensp;&ensp;&ensp;&ensp;*<br>
+                                                &ensp;&ensp;&ensp;**<br>
+                                                &ensp;&ensp;***<br>
+                                                &ensp;****<br>
+                                                *****
+                                      </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int n, i, j;<br>
+                                            &nbsp;&nbsp;cout << "Enter the number of rows: ";<br>
+                                            &nbsp;&nbsp;cin >> n;<br>
+                                            <br>
+                                            &nbsp;&nbsp;for (i = 1; i <= n; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= n - i + 1; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << " &ensp;";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= i; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << "*";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4: Write a program to print following pattern using nested loop. <br>         
+                                                &ensp;&ensp;$ <br>
+                                                &ensp;$&ensp;$ <br>
+                                        $&ensp;$&ensp;$ <br>
+                                        </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int n, i, j;<br>
+                                            &nbsp;&nbsp;cout << "Enter the number of rows: ";<br>
+                                            &nbsp;&nbsp;cin >> n;<br>
+                                            <br>
+                                            &nbsp;&nbsp;for (i = 1; i <= 3; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= 3 - i; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << "&ensp; ";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= i; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << "$ ";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Write a program to print following pattern using nested loop. <br>
+                                                1 <br>
+                                                1  2 <br>
+                                                1  2  3 <br>
+                                                3  2  1 <br>
+                                                2  1 <br>
+                                                1
+                                                </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int n, i, j;<br>
+                                            <br>
+                                            &nbsp;&nbsp;cout << "Enter the number: ";<br>
+                                            &nbsp;&nbsp;cin >> n;<br>
+                                            <br>
+                                            &nbsp;&nbsp;for (i = 1; i <= n; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= i; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << j;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;}<br>
+                                            <br>
+                                            &nbsp;&nbsp;for (i = n; i >= 1; i--)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = i; j >= 1; j--)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << j;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;}<br>
+                                            <br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                        
+										
+										<header>
+											<h3>Task 6: Write a C++ program to print Armstrong numbers between N1 to N2, where N2>N1.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            #include &lt;cmath&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int no1, no2, i, y, n, x, j, sum = 0;<br>
+                                            <br>
+                                            &nbsp;&nbsp;cout << "Enter the number from where to start: ";<br>
+                                            &nbsp;&nbsp;cin >> no1;<br>
+                                            &nbsp;&nbsp;cout << "Enter the number where to end: ";<br>
+                                            &nbsp;&nbsp;cin >> no2;<br>
+                                            <br>
+                                            &nbsp;&nbsp;for (i = no1; i <= no2; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;n = i;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;x = 0;<br>
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;while (n != 0)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = n / 10;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x++;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;n = i;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;sum = 0;<br>
+                                            <br>
+                                           
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= x; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = n % 10;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + pow(y, x);<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = n / 10;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            <br>
+                                            
+                                            &nbsp;&nbsp;&nbsp;&nbsp;if (sum == i)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << i << " is an Armstrong number." << endl;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;}<br>
+                                            <br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                        
+										
+										<header>
+											<h3>Task 7: Write a C++ program to print prime numbers between N1 to N2, where N2>N1.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int n1, n2, i, j;<br>
+                                            &nbsp;&nbsp;cout << "Enter the numbers N1 & N2:" << endl;<br>
+                                            &nbsp;&nbsp;cin >> n1 >> n2;<br>
+                                            &nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;if (n1 > n2)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << "Invalid Input";<br>
+                                            &nbsp;&nbsp;else<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (; n1 < n2; n1++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (n1 == 1)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (i = 2, j = 0; i <= (n1 / 2); i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (n1 % i == 0)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j = 1;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (j == 0)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << n1 << endl;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                        
+										
+										<header>
+											<h3>Task 8: WAP to generate all combinations of 1, 2 & 3 using for loop.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int i, j, k;<br>
+                                            &nbsp;&nbsp;for (i = 1; i <= 3; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 1; j <= 3; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (k = 1; k <= 3; k++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << i << j << k << " ";<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

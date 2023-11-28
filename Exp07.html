@@ -1,0 +1,584 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+                                       <strong> Functions:</strong><br>
+                                        - A function is a subprogram that performs a well-defined task.<br>
+                                        - Every C++ program is a collection of functions.<br>
+                                        - There should be at least one function called main( ).<br>
+                                        - Every program execution starts with main( ) & main( ) is the only function known by the Operating System; it is used as a system call. Its default return type is int.<br>
+                                        - C++ supports two types of functions:<br>
+                                          o Built-in Library Functions<br>
+                                            - C++ provides these functions.<br>
+                                            - Examples are sqrt(), pow(), strlen(), etc.<br>
+                                          o User Define Functions<br>
+                                            - Programmer can define their functions.<br>
+                                        
+                                        <strong>Advantages of functions:</strong><br>
+                                        - Program maintenance & debugging is easy.<br>
+                                        - Reusability of code.<br>
+                                        - Reduces program development time.<br>
+                                        - Work distribution is possible.<br>
+                                        - Easy to understand & easy to write.<br>
+                                        - Reduces coding size.<br>
+                                        
+                                        <strong>User Define Functions:</strong><br>
+                                        - User can define their functions.<br>
+                                        - Basic Parts/Components/Elements of functions:<br>
+                                          1. Function Prototype Or Function Declaration.<br>
+                                          2. Function Calling or invocation.<br>
+                                          3. Function Definition.<br>
+                                        
+                                        <strong>Function Prototype or Declaration:</strong><br>
+                                        - Like variables, functions are also declared called function prototype.<br>
+                                        - Function should be declared before they are used.<br>
+                                        - We can declare function inside main() or above the main().<br>
+                                        - Function declaration or prototype is used to tell the compiler about the following:<br>
+                                          - Return type of function.<br>
+                                          - Number of parameters or arguments.<br>
+                                          - Type of parameters.<br>
+                                          - Name of the function.<br>
+                                        - Syntax: `return_type (datatype arg1, datatype arg2, ……..datatype argn);`<br>
+                                        - In the above Syntax, we can also eliminate the names of arguments or skip function declarations in C++.<br>
+                                        - Example:<br>
+                                          - `int add(int a, int b);`<br>
+                                          - `int add(int, int);`<br>
+                                        
+                                        <strong>Function Calling:</strong><br>
+                                        - Function is called when a semi-colon follows a function name.<br>
+                                        - Whenever a function is called, actual parameters of calling functions are copied into formal parameters of called function(if any).<br>
+                                        - The number of actual and formal parameters should be the same(if any).<br>
+                                        - The names of actual and formal parameters may be the same or different(if any).<br>
+                                        - We can call functions using (also called Parameter Passing Techniques) call by value, call by reference & call by address.<br>
+                                        - Syntax: `function_name(parameter_list);`<br>
+                                        - Example:<br>
+                                          1. `add(a, b);` (call by value)<br>
+                                          2. `add(&a, &b);` (call by address)<br>
+                                        
+                                        <strong>Function Calling:</strong><br>
+                                        - Function is called when a semi-colon follows a function name.<br>
+                                        - Whenever a function is called, actual parameters of calling functions are copied into formal parameters of called function(if any).<br>
+                                        - The number of actual and formal parameters should be the same(if any).<br>
+                                        - The names of actual and formal parameters may be the same or different(if any).<br>
+                                        - We can call functions using (also called Parameter Passing Techniques) call by value, call by reference & call by address.<br>
+                                        - Syntax: `function_name(parameter_list);`<br>
+                                        - Example:<br>
+                                          1. `add(a, b);` (call by value)<br>
+                                          2. `add(&a, &b);` (call by address)<br>
+
+                                    
+                                        <strong>String Handling Functions:</strong><br>
+                                            - There are various string handling functions available in the cstring header file.<br>
+                                              - String length: `strlen(s1)`<br>
+                                              - String reverse: `strrev(s1)`<br>
+                                              - String lower: `strlwr(s1)`<br>
+                                              - String upper: `strupr(s1)`<br>
+                                              - String copy: `strcpy(s1, s2)` & `strncpy(s1, s2, n)`<br>
+                                              - String concatenation: `strcat(s1, s2)` & `strncat(s1, s2, n)`<br>
+                                              - String comparison: `strcmp(s1, s2)` & `strncmp(s1, s2, n)`<br>
+                                              - String character: `strchr(s1, ch)`<br>
+                                              - String reverse character: `strrchr(s1, ch)`
+                                    
+                                            
+                                        </p>
+                                                                             
+                                        
+                                    
+									
+									
+									<footer>
+										<a href="https://www.programiz.com/cpp-programming/user-defined-function-types" class="button">Learn More</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 07</h2>
+										<p>
+											Aim:  Programming using user defined functions & strings (character array)
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Write a function that takes one integer parameter as a year, and displays its leap year or not. 
+                                                 </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            void leap(int i);<br>
+                                            int main()<br>
+                                            {<br>
+                                                int y;<br>
+                                                cout<<"Enter the year to be checked: ";<br>
+                                                cin >>y;<br>
+                                                leap(y);<br>
+                                                return 0;<br>
+                                            }<br>
+                                            void leap(int i)<br>
+                                            {<br>
+                                                if (i%4==0)<br>
+                                                {<br>
+                                                    if (i%100==0)<br>
+                                                    {<br>
+                                                        if (i%400==0)<br>
+                                                            cout&lt;&lt;endl&lt;&lt;"The year is a Leap Year"&lt;&lt;endl;<br>
+                                                        else<br>
+                                                            cout&lt;&lt;endl&lt;&lt;"The year is not a Leap Year"&lt;&lt;endl;<br>
+                                                    }<br>
+                                                    else<br>
+                                                        cout&lt;&lt;endl&lt;&lt;"The year is a Leap Year"&lt;&lt;endl;<br>
+                                                }<br>
+                                                else<br>
+                                                    cout&lt;&lt;endl&lt;&lt;"The year is not a Leap Year"&lt;&lt;endl;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                                
+                                        
+                                        
+					
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Write a function that takes two integer parameters x & y, and returns the result XY.   (Don’t use pow( ))   
+                                                </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            void power(int x, int y);<br>
+                                            int main()<br>
+                                            {<br>
+                                                int a, b;<br>
+                                                cout &lt;&lt; "Enter the two integers X & Y (x^y)" &lt;&lt; endl;<br>
+                                                cin >> a >> b;<br>
+                                                power(a, b);<br>
+                                                return 0;<br>
+                                            }<br>
+                                            void power(int x, int y)<br>
+                                            {<br>
+                                                int i, j;<br>
+                                                if (x == 0 && y == 0)<br>
+                                                    cout &lt;&lt; "Infinity";<br>
+                                                else<br>
+                                                {<br>
+                                                    for (i = 0, j = 1; i < y; i++)<br>
+                                                        j = j * x;<br>
+                                                    cout &lt;&lt; j;<br>
+                                                }<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                            
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Implement a program using user defined function to return largest of three floating-point numbers.    
+                                            
+                                      </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            float large(float x, float y, float z);<br>
+                                            int main()<br>
+                                            {<br>
+                                                float a, b, c;<br>
+                                                cout &lt;&lt; "Enter the 3 numbers:" &lt;&lt; endl;<br>
+                                                cin >> a >> b >> c;<br>
+                                                cout &lt;&lt; "Largest: " &lt;&lt; large(a, b, c);<br>
+                                                return 0;<br>
+                                            }<br>
+                                            float large(float x, float y, float z)<br>
+                                            {<br>
+                                                float a;<br>
+                                                if (x > y)<br>
+                                                {<br>
+                                                    if (x > z)<br>
+                                                        a = x;<br>
+                                                    else<br>
+                                                        a = z;<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    if (y > z)<br>
+                                                        a = y;<br>
+                                                    else<br>
+                                                        a = z;<br>
+                                                }<br>
+                                                return a;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                            
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4:	WAP using user defined function to calculate and return factorial of a given integer.		 <br>         
+                                                
+                                        </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int fact(int x);<br>
+                                            int main()<br>
+                                            {<br>
+                                                int n;<br>
+                                                cout &lt;&lt; "Enter the number:";<br>
+                                                cin >> n;<br>
+                                                cout &lt;&lt; "Factorial: " &lt;&lt; fact(n);<br>
+                                                return 0;<br>
+                                            }<br>
+                                            int fact(int x)<br>
+                                            {<br>
+                                                int i, f;<br>
+                                                if (x == 0)<br>
+                                                    f = 1;<br>
+                                                else<br>
+                                                {<br>
+                                                    for (i = x, f = 1; i > 0; i--)<br>
+                                                        f = f * i;<br>
+                                                }<br>
+                                                return f;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Write a menu driven program to compute sum of digits of a number, to find reverse of a number, to count number of digits by writing three different functions with parameters and return type.	
+                                                </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int sum(int x);<br>
+                                            int rev(int y);<br>
+                                            int dig(int z);<br>
+                                            int main()<br>
+                                            {<br>
+                                                int n;<br>
+                                                char ch;<br>
+                                                cout &lt;&lt; "Choose which operation to perform:" &lt;&lt; endl &lt;&lt; "S: Sum of digits" &lt;&lt; endl &lt;&lt; "R: Reverse the digits" &lt;&lt; endl &lt;&lt; "D: Find number of digits" &lt;&lt; endl;<br>
+                                                cin >> ch;<br>
+                                                cout &lt;&lt; "Enter the number: ";<br>
+                                                cin >> n;<br>
+                                                switch (ch)<br>
+                                                {<br>
+                                                    case 'S':<br>
+                                                    case 's':<br>
+                                                        {<br>
+                                                            cout &lt;&lt; endl &lt;&lt; "The sum of digits of " &lt;&lt; n &lt;&lt; " is: " &lt;&lt; sum(n) &lt;&lt; endl;<br>
+                                                        }<br>
+                                                        break;<br>
+                                                    case 'R':<br>
+                                                    case 'r':<br>
+                                                        {<br>
+                                                            cout &lt;&lt; endl &lt;&lt; "The reversed form of " &lt;&lt; n &lt;&lt; " is: " &lt;&lt; rev(n) &lt;&lt; endl;<br>
+                                                        }<br>
+                                                        break;<br>
+                                                    case 'D':<br>
+                                                    case 'd':<br>
+                                                        {<br>
+                                                            cout &lt;&lt; endl &lt;&lt; "The number of digits in " &lt;&lt; n &lt;&lt; " is: " &lt;&lt; dig(n) &lt;&lt; endl;<br>
+                                                        }<br>
+                                                        break;<br>
+                                                    default:<br>
+                                                        cout &lt;&lt; "Invalid Selection";<br>
+                                                }<br>
+                                                return 0;<br>
+                                            }<br>
+                                            int sum(int x)<br>
+                                            {<br>
+                                                int i;<br>
+                                                for (i = 0; x > 0;)<br>
+                                                {<br>
+                                                    i += x % 10;<br>
+                                                    x /= 10;<br>
+                                                }<br>
+                                                return i;<br>
+                                            }<br>
+                                            int rev(int y)<br>
+                                            {<br>
+                                                int r;<br>
+                                                for (r = 0; y > 0;)<br>
+                                                {<br>
+                                                    r = (r * 10) + (y % 10);<br>
+                                                    y /= 10;<br>
+                                                }<br>
+                                                return r;<br>
+                                            }<br>
+                                            int dig(int z)<br>
+                                            {<br>
+                                                int i;<br>
+                                                for (i = 0; z > 0; i++)<br>
+                                                {<br>
+                                                    z /= 10;<br>
+                                                }<br>
+                                                return i;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                            
+                                        
+										
+										<header>
+											<h3>Task 6: Write user defined function “search” to search element is present in 1D array or not. Search function accepts array and key to search as parameters. </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            void search(int x, int y[], int z);<br>
+                                            int main()<br>
+                                            {<br>
+                                                int n, i, s;<br>
+                                                int arr[10];<br>
+                                                cout &lt;&lt; "Enter the number of elements in Array(< 10 ) :";<br>
+                                                cin >> n;<br>
+                                                cout &lt;&lt; "Enter the elements of Array:" &lt;&lt; endl;<br>
+                                                for (i = 0; i < n; i++)<br>
+                                                    cin >> arr[i];<br>
+                                                cout &lt;&lt; "Enter the element to be searched: ";<br>
+                                                cin >> s;<br>
+                                                search(s, arr, n);<br>
+                                                return 0;<br>
+                                            }<br>
+                                            void search(int x, int y[], int z)<br>
+                                            {<br>
+                                                int j, k = 0;<br>
+                                                for (j = 0; j < z; j++)<br>
+                                                    if (y[j] == x)<br>
+                                                        k++;<br>
+                                                if (k == 1)<br>
+                                                    cout &lt;&lt; "1 match found";<br>
+                                                else if (k > 1)<br>
+                                                    cout &lt;&lt; k &lt;&lt; " matches found";<br>
+                                                else<br>
+                                                    cout &lt;&lt; "No match found";<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                            
+                                        
+										
+										<header>
+											<h3>Task 7: Write a program to print Fibonacci series up to n using recursion.  </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            int fib(int x);<br>
+                                            int main()<br>
+                                            {<br>
+                                                int n;<br>
+                                                cout &lt;&lt; "Enter a number to print Fibonacci numbers up to: ";<br>
+                                                cin >> n;<br>
+                                                fib(n);<br>
+                                                return 0;<br>
+                                            }<br>
+                                            int fib(int x)<br>
+                                            {<br>
+                                                int i, n1, n2, n3;<br>
+                                                for (i = 0, n1 = 0, n2 = 1; i <= x; i++)<br>
+                                                {<br>
+                                                    if (i == 0)<br>
+                                                        cout &lt;&lt; "0 ";<br>
+                                                    else if (i == 1)<br>
+                                                        cout &lt;&lt; "1 ";<br>
+                                                    else<br>
+                                                    {<br>
+                                                        n3 = n1 + n2;<br>
+                                                        cout &lt;&lt; n3 &lt;&lt; " ";<br>
+                                                        n1 = n2;<br>
+                                                        n2 = n3;<br>
+                                                    }<br>
+                                                }<br>
+                                            }
+                                            </p>
+                                            
+              
+										
+										<header>
+											<h3>Task 8: Write one program to perform following operations on strings <br>
+                                                a.	To find length of a string <br>
+                                                b.	To compare two string for equality <br>
+                                                c.	To Copy one string to other <br>
+                                                d.	To concatenate two string <br>
+                                                e.	To find reverse of a String	
+                                                 </h3>
+										</header>
+										<p>
+                                            #include&lt;iostream&gt;<br>
+                                            #include&lt;cstring&gt;<br>
+                                            using namespace std;<br>
+                                            int main(){<br>
+                                            char A1[10],B2[10],C3[10];<br>
+                                            cout&lt;&lt;"Enter First string::";<br>
+                                            cin>>A1;<br>
+                                            cout&lt;&lt;"Enter Second string::";<br>
+                                            cin>>B2;<br>
+                                            cout&lt;&lt;"Length of first string is::"&lt;&lt;strlen(A1)&lt;&lt;endl;<br>
+                                            cout&lt;&lt;"Length of second string is::"&lt;&lt;strlen(B2)&lt;&lt;endl;<br>
+                                            {if(strcmp(A1,B2)==0)<br>
+                                                cout&lt;&lt;"Both are the same string"&lt;&lt;endl;<br>
+                                            else<br>
+                                                cout&lt;&lt;"Both are different strings"&lt;&lt;endl;}<br>
+                                            strcpy(C3,A1);<br>
+                                            cout&lt;&lt;"The copied string is::"&lt;&lt;C3;<br>
+                                            cout&lt;&lt;"The concatenation of given strings is::"&lt;&lt;strcat(C3,B2)&lt;&lt;endl;<br>
+                                            cout&lt;&lt;"The reverse of the first string is::"&lt;&lt;strrev(A1)&lt;&lt;endl;<br>
+                                            cout&lt;&lt;"The reverse of the second string is::"&lt;&lt;strrev(B2)&lt;&lt;endl;<br>
+                                            return 0;}<br>
+                                            do same
+                                            </p>
+                                            
+                                            
+
+                                            <header>
+                                                <h3>Task 9: WAP to copy one string to another string without using string handling function and display copied string. 
+                                                     </h3>
+                                            </header>
+                                            <p>
+                                                #include&lt;iostream&gt;<br>
+                                                #include&lt;cstring&gt;<br>
+                                                using namespace std;<br>
+                                                int main(){<br>
+                                                char A[10],B[10];<br>
+                                                int i;<br>
+                                                cout&lt;&lt;"Enter the string";<br>
+                                                cin>>A;<br>
+                                                for(i=0;A[i]!='\0';i++)<br>
+                                                {<br>
+                                                    B[i]=A[i];<br>
+                                                }<br>
+                                                cout&lt;&lt;"The copied string is"&lt;&lt;B;<br>
+                                                return 0;}<br>
+                                                do same
+                                                </p>                                                     
+                                            
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

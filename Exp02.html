@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+										<strong>Program Features:</strong><br>
+										- Like C, the C++ program is a collection of functions.<br>
+										- Every C++ program must have a main( ).<br>
+										- C++ is a free-form language. With a few exceptions, the compiler ignores carriage return and white spaces.<br>
+										- Like C, C++ statements terminate with semicolons.<br><br>
+									
+										<strong>Output Operator ( << )</strong><br>
+										- <strong><code>cout << "C++ is better than C.\n";</code></strong><br>
+										- Causes the string in quotation marks to be displayed on the screen.<br>
+										- The identifier cout (pronounced as C out) is a predefined object that represents the standard output stream in C++.<br>
+										- The operator << is called the insertion or put to operator.<br><br>
+									
+										<strong>Input Operator ( >> )</strong><br>
+										- The statement <strong><code>cin >> number1;</code></strong> is an input statement and causes the program to wait for the user to type in a number.<br>
+										- The identifier cin (pronounced ‘C in’) is a predefined object in C++ that corresponds to the standard input stream.<br>
+										- The operator >> is known as the extraction or get from operator.<br>
+										- It extracts (or takes) the value from the keyboard and assigns it to the variable on its right.<br>
+
+										<strong>The iostream File</strong><br>
+										- The <code>#include</code> directive instructs the compiler to include the contents of the file enclosed within angular brackets into the source file.<br>
+										- The header file iostream should be included at the beginning of all programs that use input/output statements.<br><br>
+									
+										<strong>Return Type of main( )</strong><br>
+										- In C++, main( ) returns an integer value to the operating system.<br>
+										- Therefore, every main( ) in C++ should end with a <strong><code>return 0;</code></strong> statement; otherwise, a warning or error might occur.<br>
+										- Since main( ) returns an integer type, the return type for main( ) is explicitly specified as int.<br>
+									
+										<strong>Data Types:</strong><br>
+										- Data types or types are used to represent the type of data stored in variables.<br>
+										- Data type is an instruction or keyword given to the compiler for organizing data.<br>
+									</p>
+									
+									
+									<footer>
+										<a href="https://www.geeksforgeeks.org/cpp-programming-basics/" class="button">Learn More</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 02</h2>
+										<p>
+											AIM: Implementing various programs using operators, expressions and input/output operations 
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Write a program to initialize your details like age, name, gender, city, height etc and display it. (for name & city use character array) </h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int age = 17;<br>
+												char name[10] = "Kundan";<br>
+												string gender = "Male";<br>
+												string city = "Shahada";<br>
+												int height = 182; // In cm<br><br>
+										
+												cout << "Name  : " << name << endl<br>
+													 << "Age   : " << age << endl<br>
+													 << "Gender: " << gender << endl<br>
+													 << "City  : " << city << endl<br>
+													 << "Height: " << height << "cm";<br>
+										
+											}<br>
+										</p>
+					
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Write a program to read your details like age, name, gender, city, height etc and display it.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int age;<br>
+												string name;<br>
+												string gender;<br>
+												string city;<br>
+												int height; // In cm<br><br>
+										
+												cout << "Enter the Name: ";<br>
+												cin >> name;<br>
+												cout << "Enter the Age: ";<br>
+												cin >> age;<br>
+												cout << "Enter the City: ";<br>
+												cin >> city;<br>
+												cout << "Enter the Gender: ";<br>
+												cin >> gender;<br>
+												cout << "Enter the Height (in cm): ";<br>
+												cin >> height;<br><br>
+										
+												cout << "Name  : " << name << endl;<br>
+												cout << "Age   : " << age << endl;<br>
+												cout << "Gender: " << gender << endl;<br>
+												cout << "City  : " << city << endl;<br>
+												cout << "Height: " << height << "cm";<br>
+										
+												return 0;<br>
+											}<br>
+										</p>
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Write a program to exchange values of two variables without using 3rd variable</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int no1;<br>
+												int no2;<br>
+												cout << "Enter the First Number : ";<br>
+												cin >> no1;<br>
+												cout << "Enter the Second Number: ";<br>
+												cin >> no2;<br>
+												no1 = no1 + no2;<br>
+												no2 = no1 - no2;<br>
+												no1 = no1 - no2;<br>
+												cout << "No1: " << no1 << endl;<br>
+												cout << "No2: " << no2;<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4: Given the value of x, y, and z. Write a program to rotate their values such that x has value of y, y has value of z and z has value of x.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int x, y, z, a;<br><br>
+										
+												cout << "Enter the value of X : ";<br>
+												cin >> x;<br>
+												cout << "Enter the value of Y : ";<br>
+												cin >> y;<br>
+												cout << "Enter the value of Z : ";<br>
+												cin >> z;<br><br>
+										
+												a = x;<br>
+												x = y;<br>
+												y = z;<br>
+												z = a;<br><br>
+										
+												cout << "X: " << x << endl;<br>
+												cout << "Y: " << y << endl;<br>
+												cout << "Z: " << z;<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Write a program to find area & perimeter of a circle</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int r, a, c;<br><br>
+										
+												cout << "Enter the Radius of circle : ";<br>
+												cin >> r;<br><br>
+										
+												a = 22/7 * r * r;<br>
+												c = 22/7 * 2 * r;<br><br>
+										
+												cout << endl << "Area of the circle is: " << a << " cm square" << endl;
+												cout << "Circumference of the Circle is: " << c << " cm";<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+										<header>
+											<h3>Task 6: Write a program to calculate simple interest.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int p, r, t, si;<br><br>
+										
+												cout << "Enter the Principal amount : ";<br>
+												cin >> p;<br>
+												cout << "Enter the Rate of Interest : ";<br>
+												cin >> r;<br>
+												cout << "Enter the Number of Years  : ";<br>
+												cin >> t;<br><br>
+										
+												si = p * r * t / 100;<br><br>
+										
+												cout << endl << "The Simple Interest is: " << si;<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+										<header>
+											<h3>Task 7: Write a program to convert temperature in Fahrenheit to Celsius.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												float tf, tc;<br><br>
+										
+												cout << "Enter the Temperature in Fahrenheit : ";<br>
+												cin >> tf;<br><br>
+										
+												tc = (tf - 32) * 5/9;<br><br>
+										
+												cout << endl << "The Temperature in Celsius is: " << tc;<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+										<header>
+											<h3>Task 8: A four-digit number is inputted through the keyboard. Write a program to calculate sum of digits of a number.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int no1, no2, sum;<br><br>
+										
+												cout << "Enter the Four-Digit Number : ";<br>
+												cin >> no1;<br><br>
+										
+												sum = 0, no2 = no1;<br>
+												sum = sum + (no1 % 10);<br>
+												no1 = no1 / 10;<br>
+												sum = sum + (no1 % 10);<br>
+												no1 = no1 / 10;<br>
+												sum = sum + (no1 % 10);<br>
+												no1 = no1 / 10;<br>
+												sum = sum + (no1 % 10);<br><br>
+										
+												cout << endl << "The Sum of the digits of " << no2 << " is: " << sum;<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+										<header>
+											<h3>Task 9: A four-digit number is inputted through the keyboard. Write a program to reverse the number.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int no1, no2, revno;<br><br>
+										
+												cout << "Enter the Four-Digit Number : ";<br>
+												cin >> no1;<br><br>
+										
+												revno = 0, no2 = no1;<br>
+												revno = revno + (no1 % 10);<br>
+												no1 = no1 / 10;<br>
+												revno = revno * 10 + (no1 % 10);<br>
+												no1 = no1 / 10;<br>
+												revno = revno * 10 + (no1 % 10);<br>
+												no1 = no1 / 10;<br>
+												revno = revno * 10 + (no1 % 10);<br><br>
+										
+												cout << endl << "The Reverse of the digits of " << no2 << " is: " << revno;<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+										<header>
+											<h3>Task 10: Write a program to find largest of two numbers using ternary operator.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br><br>
+										
+											int main()<br>
+											{<br>
+												int no1, no2;<br><br>
+										
+												cout << "Enter No1 : ";<br>
+												cin >> no1;<br>
+												cout << "Enter No2 : ";<br>
+												cin >> no2;<br><br>
+										
+												(no1 > no2) ? cout << no1 << " is Greater" : cout << no2 << " is Greater";<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+										<header>
+											<h3>Task 11: If the length of three sides of a triangle are input through the keyboard, write a program to find the area of triangle and check whether the triangle is valid or not using conditional operator. Hint:- A triangle is valid if the sum of its two sides is greater than the third side.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br>
+											#include &lt;math.h&gt;<br><br>
+										
+											int main()<br>
+											{<br>
+												float a, b, c, s, ar;<br><br>
+										
+												cout << "Enter A : ";<br>
+												cin >> a;<br>
+												cout << "Enter B : ";<br>
+												cin >> b;<br>
+												cout << "Enter C : ";<br>
+												cin >> c;<br>
+												s = (a + b + c) / 2;<br>
+												ar = sqrt(s * (s - a) * (s - b) * (s - c));<br>
+												(a + b > c && b + c > a && a + c > b) ? cout << "Triangle is Valid " << endl << "Area of the triangle is " << ar : cout << "Triangle is Invalid";<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+										<header>
+											<h3>Task 12: Write a program to calculate compound interest.</h3>
+										</header>
+										<p>
+											#include &lt;iostream&gt;<br>
+											using namespace std;<br>
+											#include &lt;math.h&gt;<br><br>
+										
+											int main()<br>
+											{<br>
+												int p, r, n, t, ci;<br><br>
+										
+												cout << "Enter the Principal amount : ";<br>
+												cin >> p;<br>
+												cout << "Enter the Rate of Interest : ";<br>
+												cin >> r;<br>
+												cout << "Enter the number of Compounding per year : ";<br>
+												cin >> n;<br>
+												cout << "Enter the Number of Years  : ";<br>
+												cin >> t;<br><br>
+										
+												ci = p * pow(1 + (r/n), n*t);<br><br>
+										
+												cout << endl << "The Compound Interest is: " << ci;<br>
+												return 0;<br>
+											}<br>
+										</p>
+										
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+								<section class="contact">
+									<header>
+										<h3>Do you want to contact us?</h3>
+									</header>
+									<p>Phone(1) : 8788169594 <br>
+										Phone(2) : 9309416105 <br>
+										Email : laveshpatil103@gmail.com
+									</p>
+									<ul class="icons">
+										<li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+									</ul>
+								</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

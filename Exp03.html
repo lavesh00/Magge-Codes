@@ -1,0 +1,721 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+                                        <strong>if:</strong><br>
+                                        - "if" is a decision-making statement.<br>
+                                        - "if" is the keyword used to decide to control the flow of execution.<br>
+                                        - <strong>Syntax:</strong><br>
+                                        1. 'if' with single statement<br>
+                                        <code>if (condition)<br>
+                                            &emsp;true_statement;</code><br>
+                                        - In the above syntax, the condition is evaluated first; if the condition is evaluated as true, then true_statement is executed.<br>
+                                        - The default scope of 'if' is a single statement; that’s why there is no need to use curly braces.<br>
+                                        2. 'if' with multiple statements<br>
+                                        <code>if (condition) {<br>
+                                            &emsp;true_statement_1;<br>
+                                            &emsp;true_statement_2;<br>
+                                            &emsp;...<br>
+                                            &emsp;true_statement_n;<br>
+                                        }</code><br>
+                                        - Using curly braces increased (multiple statements) the scope of the 'if' statement.<br><br>
+                                    
+                                        <strong>if-else:</strong><br>
+                                        - If-else is a decision-making statement.<br>
+                                        - The else clause is an extension to the if clause & contains a false part.<br>
+                                        - "if" & "else" are keywords used to decide to control the flow of execution.<br>
+                                        - The else block should have matching if, otherwise, mismatch else error will occur.<br>
+                                        - As per syntax, no condition is required with the else block.<br>
+                                        <strong>Syntax:</strong><br>
+                                        1. if-else with single statement<br>
+                                        <code>if (condition)<br>
+                                            &emsp;true_statement;<br>
+                                        else<br>
+                                            &emsp;false_statement;</code><br>
+                                        2. if-else with multiple statements<br>
+                                        <code>if (condition) {<br>
+                                            &emsp;true_statement_1;<br>
+                                            &emsp;true_statement_2;<br>
+                                            &emsp;...<br>
+                                            &emsp;true_statement_n;<br>
+                                        }<br>
+                                        else {<br>
+                                            &emsp;false_statement_1;<br>
+                                            &emsp;false_statement_2;<br>
+                                            &emsp;...<br>
+                                            &emsp;false_statement_n;<br>
+                                        }</code><br><br>
+                                    
+                                        <strong>Nested if-else:</strong><br>
+                                        - It is a complex decision-making statement if and/or else clause can be nested one inside another (as per syntax of else).<br>
+                                        - If clause may have if-else and/or its chain in nested if-else. Similarly, the else clause may have if-else and/or its chain or both if & else clauses have sub if-else clause/block.<br>
+                                        - Complex nested if-else (Multiple decision-making) statements may cause problems maintaining the program.<br>
+                                        <strong>Syntax:</strong><br>
+                                        <code>if (condition) {<br>
+                                            &emsp;if (condition) {<br>
+                                                &emsp;&emsp;statements;<br>
+                                            &emsp;}<br>
+                                            &emsp;else {<br>
+                                                &emsp;&emsp;statements;<br>
+                                            &emsp;}<br>
+                                        }<br>
+                                        else {<br>
+                                            &emsp;if (condition) {<br>
+                                                &emsp;&emsp;statements;<br>
+                                            &emsp;}<br>
+                                            &emsp;else {<br>
+                                                &emsp;&emsp;statements;<br>
+                                            &emsp;}<br>
+                                        }</code><br>
+                                        In the above syntax, the inner if and/or else clauses may have if-else clauses in one another. It may confuse; that’s why to be careful when nesting if-else. Nested if-else is nothing but chained with one another.<br><br>
+                                    
+                                        <strong>else-if ladder:</strong><br>
+                                        - It is a common programming construct used to make multiple decisions. Sometimes, we may call this as if-else-if ladder.<br>
+                                        - It is different than that of nested if-else & less confusing than that of nested if-else.<br>
+                                        <strong>Syntax:</strong><br>
+                                        <code>if (condition_1) {<br>
+                                            &emsp;statements_1;<br>
+                                        }<br>
+                                        else if (condition_2) {<br>
+                                            &emsp;statements_2;<br>
+                                        }<br>
+                                        else if (condition_3) {<br>
+                                            &emsp;statements_3;<br>
+                                        }<br>
+                                        :<br>
+                                        :<br>
+                                        else {<br>
+                                            &emsp;statements_n;<br>
+                                        }</code><br>
+                                        In the above format, the condition is evaluated from top to down.<br><br>
+                                    
+                                        <strong>switch case:</strong><br>
+                                        - It is a multiple-branching statement.<br>
+                                        - It checks for equality, not condition.<br>
+                                        <strong>Advantages:</strong><br>
+                                        - Easy to use<br>
+                                        - Easy to find out errors (if any) & debug.<br>
+                                        - Complexity of the program is minimized.<br>
+                                        <strong>Syntax:</strong><br>
+                                        <code>switch (equality_constant or variable or expression) {<br>
+                                            &emsp;case constant_1:<br>
+                                                &emsp;&emsp;statement_1;<br>
+                                                &emsp;&emsp;break;<br>
+                                            &emsp;case constant_2:<br>
+                                                &emsp;&emsp;statement_2;<br>
+                                                &emsp;&emsp;break;<br>
+                                            &emsp;:<br>
+                                            &emsp;:<br>
+                                            &emsp;case constant_n:<br>
+                                                &emsp;&emsp;statement_n;<br>
+                                                &emsp;&emsp;break;<br>
+                                            &emsp;default:<br>
+                                                &emsp;&emsp;default_statement;<br>
+                                        }</code><br>
+                                        In the above syntax:<br>
+                                        - equality_constant or variable or expression should be of type int or char.<br>
+                                        - default is optional<br><br>
+                                    
+                                        <strong>Nested switch case:</strong><br>
+                                        - Outer switch block may contain inner switch block, i.e., switch within a switch.<br>
+                                        - The inner and/or outer switch may contain the same equality constant.<br>
+                                        <strong>Syntax:</strong><br>
+                                        <code>switch (equality_constant or variable or expression) {<br>
+                                            &emsp;case constant_1:<br>
+                                                &emsp;&emsp;statement_1;<br>
+                                                &emsp;&emsp;break;<br>
+                                            &emsp;case constant_2:<br>
+                                                &emsp;&emsp;statement_2;<br>
+                                                &emsp;&emsp;break;<br>
+                                            &emsp;:<br>
+                                            &emsp;:<br>
+                                            &emsp;case constant_n:<br>
+                                                &emsp;&emsp;statement_n;<br>
+                                                &emsp;&emsp;break;<br>
+                                            &emsp;default:<br>
+                                                &emsp;&emsp;default_statement;<br>
+                                            &emsp;switch (equality_constant or variable or expression) {<br>
+                                            &emsp;&emsp;case constant_1:<br>
+                                                &emsp;&emsp;&emsp;statement_1;<br>
+                                                &emsp;&emsp;&emsp;break;<br>
+                                            &emsp;&emsp;case constant_2:<br>
+                                                &emsp;&emsp;&emsp;statement_2;<br>
+                                                &emsp;&emsp;&emsp;break;<br>
+                                            &emsp;&emsp;:<br>
+                                            &emsp;&emsp;:<br>
+                                            &emsp;&emsp;case constant_n:<br>
+                                                &emsp;&emsp;&emsp;statement_n;<br>
+                                                &emsp;&emsp;&emsp;break;<br>
+                                            &emsp;&emsp;default:<br>
+                                                &emsp;&emsp;&emsp;default_statement;<br>
+                                            &emsp;}</code>
+                                        </p>
+                                    
+									
+									
+									<footer>
+										<a href="https://www.geeksforgeeks.org/decision-making-c-cpp/" class="button">Learn More</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 03</h2>
+										<p>
+											AIM: Implementing programs using conditional/Decision making/selection statements  
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Develop a program that accepts sales amount; if the sales amount is more than 5000, then the discount is 12% of the sales amount; otherwise, it is 7%—display the total discount and amount to be paid after the discount. </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int sa, da, fa;<br><br>
+                                        
+                                                cout << "Enter the Sales Amount: ";<br>
+                                                cin >> sa;<br><br>
+                                        
+                                                if (sa > 5000)<br>
+                                                {<br>
+                                                    da = sa * 12/100;<br>
+                                                }<br>
+                                                else if (sa > 0 && sa <= 5000)<br>
+                                                {<br>
+                                                    da = sa * 7/100;<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    cout << "Invalid Input";<br>
+                                                    return 0;<br>
+                                                }<br>
+                                                fa = sa - da;<br><br>
+                                        
+                                                cout << endl << "The total discount is: " << da << endl << "The amount to be paid is: " << fa;<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+					
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Write a program to test whether a given character is a capital or small letter and change small letters to capital letters and vice versa.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                char chr;<br>
+                                                int a;<br><br>
+                                        
+                                                cout << "Enter the Character: ";<br>
+                                                cin >> chr;<br><br>
+                                        
+                                                a = chr;<br><br>
+                                        
+                                                if (a > 64 && a < 91)<br>
+                                                {<br>
+                                                    cout << endl << "Capital" << endl;
+                                                    a = a + 32;<br>
+                                                    cout << "Small form: " << (char)a << endl;<br>
+                                                }<br>
+                                                else if (a > 96 && a < 123)<br>
+                                                {<br>
+                                                    cout << endl << "Small" << endl;
+                                                    a = a - 32;<br>
+                                                    cout << "Capital form: " << (char)a << endl;<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    cout << "Invalid";<br>
+                                                }<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Implement a program to accept a year as input and print whether it is a leap. A year is a leap if divisible by 4, and centennial years (years divisible by 100) are leap years only when divisible by 400.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int year;<br><br>
+                                        
+                                                cout << "Enter the Year: ";<br>
+                                                cin >> year;<br><br>
+                                        
+                                                if (year % 4 == 0)<br>
+                                                {<br>
+                                                    if (year % 100 == 0)<br>
+                                                    {<br>
+                                                        if (year % 400 == 0)<br>
+                                                        {<br>
+                                                            cout << "The year is a Leap Year";<br>
+                                                        }<br>
+                                                        else<br>
+                                                        {<br>
+                                                            cout << "The year is not a Leap Year";<br>
+                                                        }<br>
+                                                    }<br>
+                                                    else<br>
+                                                    {<br>
+                                                        cout << "The year is a Leap Year";<br>
+                                                    }<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    cout << "The year is not a Leap Year";<br>
+                                                }<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4: Develop a program to perform divisibility tests by 3 and 5.  If the entered number is divisible by three and not by five print “THREE”; if the number is divisible by five and not by three print “FIVE”; if divisible by both 3 & 5 print “BOTH” otherwise, print “NOT”</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int num, num3, num5;<br><br>
+                                        
+                                                cout << "Enter the Number: ";<br>
+                                                cin >> num;<br><br>
+                                        
+                                                if (num % 3 == 0)<br>
+                                                {<br>
+                                                    num3 = 1;<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    num3 = 0;<br>
+                                                }<br><br>
+                                        
+                                                if (num % 5 == 0)<br>
+                                                {<br>
+                                                    num5 = 1;<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    num5 = 0;<br>
+                                                }<br><br>
+                                        
+                                                if (num3 == 1 && num5 == 1)<br>
+                                                {<br>
+                                                    cout << "BOTH";<br>
+                                                }<br>
+                                                else if (num3 == 1)<br>
+                                                {<br>
+                                                    cout << "THREE";<br>
+                                                }<br>
+                                                else if (num5 == 1)<br>
+                                                {<br>
+                                                    cout << "FIVE";<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    cout << "NOT";<br>
+                                                }<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Vitamin D3 is recommended as the best indicator of vitamin D's nutritional status. If any patient is undergone a Vitamin D3 test, its value ranges from 0 <= to >100 nm/ML. Scott is a Pathologist, and he is doing a vitamin D3 test on his patient. You have to help him automate this process to know the status/level of vitamin D3 depending on its values in nm/mL. Write a program to help Scott to tell the status/level to patients as given in the table below. <br>
+                                                    <br>
+                                                    <strong>D3 in nm/ML Status:</strong><br>
+                                                     <20 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deficiency<br>
+                                                     20-30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insufficiency<br>
+                                                     30-100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sufficiency<br>
+                                                     >100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toxicity<br>
+                                                </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                float d3;<br><br>
+                                        
+                                                cout << "Enter the amount of D3: ";<br>
+                                                cin >> d3;<br><br>
+                                        
+                                                if (d3 >= 0 && d3 < 20)<br>
+                                                {<br>
+                                                    cout << "Deficiency";<br>
+                                                }<br>
+                                                else if (d3 >= 20 && d3 < 30)<br>
+                                                {<br>
+                                                    cout << "Insufficiency";<br>
+                                                }<br>
+                                                else if (d3 >= 30 && d3 <= 100)<br>
+                                                {<br>
+                                                    cout << "Sufficiency";<br>
+                                                }<br>
+                                                else if (d3 > 100)<br>
+                                                {<br>
+                                                    cout << "Toxicity";<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    cout << "Invalid Input";<br>
+                                                }<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 6: Write a program that takes three coefficients (a,b,and c) of a quadratic equation; ax2+bx+c=0 as input, compute all possible roots, and print them with appropriate messages.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            #include &lt;math.h&gt;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int a, b, c, r1, r2;<br>
+                                                cout << "Enter the values of a, b, c of a quadratic equation:" << endl;<br>
+                                                cin >> a >> b >> c;<br><br>
+                                        
+                                                if (((b * b) - (4 * a * c)) > 0)<br>
+                                                {<br>
+                                                    cout << "Two roots possible" << endl;
+                                                    r1 = (-b + sqrt((b * b) - (4 * a * c))) / (2 * a);<br>
+                                                    r2 = (-b - sqrt((b * b) - (4 * a * c))) / (2 * a);<br>
+                                                    cout << "The two roots are " << r1 << " and " << r2;<br>
+                                                }<br>
+                                                else if (((b * b) - (4 * a * c)) == 0)<br>
+                                                {<br>
+                                                    cout << "One root possible" << endl;
+                                                    r1 = (-b + sqrt((b * b) - (4 * a * c))) / (2 * a);<br>
+                                                    r2 = (-b - sqrt((b * b) - (4 * a * c))) / (2 * a);<br>
+                                        
+                                                    if (r1 == r2)<br>
+                                                    {<br>
+                                                        cout << "The root is " << r1;<br>
+                                                    }<br>
+                                                    else<br>
+                                                    {<br>
+                                                        cout << "Invalid";<br>
+                                                    }<br>
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    cout << "No possible roots";<br>
+                                                }<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 7: Using a switch case, write a program to check whether the entered character is a vowel or consonant.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                char chr;<br><br>
+                                        
+                                                cout << "Enter the character: ";<br>
+                                                cin >> chr;<br><br>
+                                        
+                                                switch (chr)<br>
+                                                {<br>
+                                                    case 'A':<br>
+                                                    case 'E':<br>
+                                                    case 'I':<br>
+                                                    case 'O':<br>
+                                                    case 'U':<br>
+                                                    case 'a':<br>
+                                                    case 'e':<br>
+                                                    case 'i':<br>
+                                                    case 'o':<br>
+                                                    case 'u':<br>
+                                                        cout << "Vowel";<br>
+                                                        break;<br>
+                                                    default:<br>
+                                                        cout << "Consonant";<br>
+                                                }<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 8: Write a program that takes an arithmetic operator (+, -, *, or /) and two operands from the user. Perform corresponding arithmetic operations on the operands using switch case.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int a, b;<br>
+                                                char choice;<br>
+                                                float result;<br><br>
+                                        
+                                                cout << "Enter the two integers:" << endl;<br>
+                                                cin >> a >> b;<br>
+                                                cout << "Enter the operation to perform (+, -, *, /)";<br>
+                                                cin >> choice;<br><br>
+                                        
+                                                switch (choice)<br>
+                                                {<br>
+                                                    case '+':<br>
+                                                        result = a + b;<br>
+                                                        break;<br>
+                                                    case '-':<br>
+                                                        result = a - b;<br>
+                                                        break;<br>
+                                                    case '*':<br>
+                                                        result = a * b;<br>
+                                                        break;<br>
+                                                    case '/':<br>
+                                                        result = (float)a / b;<br>
+                                                        break;<br>
+                                                    default:<br>
+                                                        cout << "Invalid Operator";<br>
+                                                        return 0;<br>
+                                                }<br>
+                                                cout << "Result: " << result;<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+										<header>
+											<h3>Task 9: Implement a menu-driven program to calculate the area of a triangle, rectangle, circle, and sphere.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            #include &lt;math.h&gt;<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                char choice;<br><br>
+                                        
+                                                cout << "Select the shape to calculate area of:" << endl
+                                                     << "T : Triangle" << endl
+                                                     << "R : Rectangle" << endl
+                                                     << "C : Circle" << endl
+                                                     << "S : Sphere" << endl;
+                                                cin >> choice;<br><br>
+                                        
+                                                switch (choice)<br>
+                                                {<br>
+                                                    case 'T':<br>
+                                                    case 't':<br>
+                                                    {<br>
+                                                        int choice2;<br>
+                                                        cout << "Select the inputs for Triangle:" << endl
+                                                             << "1: Height & Base" << endl
+                                                             << "2: Sides" << endl;
+                                                        cin >> choice2;<br>
+                                                        if (choice2 == 1)<br>
+                                                        {<br>
+                                                            float h, b, a;<br>
+                                                            cout << "Enter the Height & Base of Triangle (cm): " << endl;
+                                                            cin >> h >> b;<br>
+                                                            a = b * h / 2;<br>
+                                                            cout << endl << "Area of Triangle is: " << a << " cm sq.";<br>
+                                                        }<br>
+                                                        else if (choice2 == 2)<br>
+                                                        {<br>
+                                                            float a, b, c, s, ar;<br>
+                                                            cout << "Enter the sides of Triangle (cm): " << endl;
+                                                            cin >> a >> b >> c;
+                                                            s = (a + b + c) / 2;
+                                                            ar = sqrt(s * (s - a) * (s - b) * (s - c));<br>
+                                                            cout << endl << "Area of Triangle is: " << ar << " cm sq.";<br>
+                                                        }<br>
+                                                        else<br>
+                                                            cout << "Invalid Selection";<br>
+                                                    }<br>
+                                                    break;<br>
+                                                    case 'R':<br>
+                                                    case 'r':<br>
+                                                    {<br>
+                                                        float l, b, a;<br>
+                                                        cout << "Enter the Length & Breadth of Rectangle (cm): " << endl;
+                                                        cin >> l >> b;<br>
+                                                        a = l * b;<br>
+                                                        cout << endl << "Area of Rectangle is: " << a << " cm sq.";<br>
+                                                    }<br>
+                                                    break;<br>
+                                                    case 'C':<br>
+                                                    case 'c':<br>
+                                                    {<br>
+                                                        float r, a;<br>
+                                                        cout << "Enter the Radius of Circle (cm): " << endl;
+                                                        cin >> r;<br>
+                                                        a = r * r * 22 / 7;<br>
+                                                        cout << endl << "Area of Circle is: " << a << " cm sq.";<br>
+                                                    }<br>
+                                                    break;<br>
+                                                    case 'S':<br>
+                                                    case 's':<br>
+                                                    {<br>
+                                                        float r, a;<br>
+                                                        cout << "Enter the Radius of Sphere (cm): " << endl;
+                                                        cin >> r;<br>
+                                                        a = r * r * 4 * 22 / 7;<br>
+                                                        cout << endl << "Area of Sphere is: " << a << " cm sq.";<br>
+                                                    }<br>
+                                                    break;<br>
+                                                    default:<br>
+                                                        cout << "Invalid selection";<br>
+                                                }<br><br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

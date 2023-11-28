@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+                                        <!DOCTYPE html>
+                                        <html>
+                                        
+                                        <head>
+                                            <title>Structures and Pointers in C++</title>
+                                        </head>
+                                        
+                                        <body>
+                                        
+                                            <h3>Structures</h3>
+                                        
+                                            <ul>
+                                                <li>Structure is a user-defined data type.</li>
+                                                <li>It is used to store heterogeneous data under a unique name.</li>
+                                                <li>The keyword 'struct' is used to declare a structure.</li>
+                                                <li>Structure is a convenient tool for handling a group of logically related data items of different data types.</li>
+                                            </ul>
+                                        
+                                            <h3>Accessing Members of a Structure</h3>
+                                        
+                                            <ul>
+                                                <li>C++ provides two operators to access structure members: dot (.) and arrow (->).</li>
+                                                <li>Dot (.) is used to work with a structure variable.</li>
+                                                <li>Arrow (->) is used to work with a structure with a pointer.</li>
+                                                <li>Syntax: <code>Structure_variable.member;</code></li>
+                                                <li>Example: <code>s1.rollno;</code></li>
+                                            </ul>
+                                        
+                                            <h3>Assigning Values to Structure Members</h3>
+                                        
+                                            <ul>
+                                                <li>With the help of the assignment operator, we can assign a value to structure members.</li>
+                                                <li>Syntax: <code>Structure_variable.member = value;</code></li>
+                                                <li>Example: <code>s1.rollno = 50;</code></li>
+                                            </ul>
+                                        
+                                            <h3>Initialization of Structure</h3>
+                                        
+                                            <ul>
+                                                <li>We can initialize a structure similar to an array by specifying a list of values in curly brackets.</li>
+                                                <li>Syntax: <code>struct structure_name variable_1 = { list of values separated by comma };</code></li>
+                                                <li>Example: <code>struct student s1 = {50, "Rohit", 68.00, 5.7};</code></li>
+                                            </ul>
+                                        
+                                            <h3>Array Within Structure</h3>
+                                        
+                                            <ul>
+                                                <li>We can have an array within a structure.</li>
+                                                <li>Example:</li>
+                                                <pre>
+                                        struct student {
+                                            int rollno;
+                                            char nm[10];
+                                            int marks[5];
+                                        };
+                                                </pre>
+                                            </ul>
+                                        
+                                            <h3>Array of Structure</h3>
+                                        
+                                            <ul>
+                                                <li>We can have an array of structure.</li>
+                                                <li>Syntax: <code>struct structure_name arrayname[size];</code></li>
+                                                <li>Example: <code>struct student s[100];</code></li>
+                                            </ul>
+                                        
+                                            <h3>Pointers</h3>
+                                        
+                                            <ul>
+                                                <li>Pointer is a variable that holds the memory address of another variable.</li>
+                                                <li>Pointer Operators:
+                                                    <ul>
+                                                        <li>&amp; - Address of or Direction or referencing operator.</li>
+                                                        <li>* - Value at address or Indirection or dereferencing pointer operator.</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Pointer Variables Declaration:
+                                                    <ul>
+                                                        <li>Like normal variable declaration, we can declare a pointer variable using the value at address operator (*).</li>
+                                                        <li>Syntax: <code>data_type *variable_name;</code></li>
+                                                        <li>Examples:
+                                                            <ul>
+                                                                <li><code>int *ptr;</code></li>
+                                                                <li><code>float *ptr2;</code></li>
+                                                                <li><code>char *ch;</code></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>What information pointer variable contains?
+                                                    <ul>
+                                                        <li>Pointer may be initialized to zero, NULL, or an address (if we know).</li>
+                                                        <li>Initializing pointer to zero is equivalent to initializing a pointer to NULL.</li>
+                                                        <li>NULL is a symbolic constant available in "stdio.h".</li>
+                                                        <li>Examples:
+                                                            <ul>
+                                                                <li><code>int *p = 0;</code></li>
+                                                                <li><code>int *p = NULL;</code></li>
+                                                                <li><code>int *p = &amp;i;</code></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        
+                                        </body>
+                                        
+                                        </html>
+                                        
+    </pre>
+
+
+                                    </p>
+									<footer>
+										<a href="https://www.programiz.com/cpp-programming/structure" class="button">Structures</a>
+                                        <br>
+                                    
+                                        <a href="https://www.programiz.com/cpp-programming/pointers" class="button">Pointers</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 08</h2>
+										<p>
+											AIM: Programming using structure and pointer
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Define structure Student having data members: Roll no, name, address, branch and percentage. WAP to read and display information of a student.
+                                                </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            #include &lt;cstring&gt;<br><br>
+                                        
+                                            struct student<br>
+                                            {<br>
+                                                int roll;<br>
+                                                char name[20];<br>
+                                                char add[20];<br>
+                                                char branch[20];<br>
+                                                float per;<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                struct student s;<br>
+                                                cout << "Enter the following information of the student Name, Address, Branch, Rollno, Percent:" << endl;<br>
+                                                gets(s.name);<br>
+                                                gets(s.add);<br>
+                                                gets(s.branch);<br>
+                                                cin >> s.roll;<br>
+                                                cin >> s.per;<br>
+                                                cout << "Rollno: " << s.roll << endl;<br>
+                                                cout << "Name: " << s.name << endl;<br>
+                                                cout << "Address: " << s.add << endl;<br>
+                                                cout << "Branch: " << s.branch << endl;<br>
+                                                cout << "Percentage: " << s.per;<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Define structure called cricket that will describe the following data Player name, country name, no of matches played & batting avg. Develop a program that store information of 10 players and display names of players having batting average greater than 50.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            #include &lt;cstring&gt;<br><br>
+                                        
+                                            struct player<br>
+                                            {<br>
+                                                char name[20];<br>
+                                                char country[20];<br>
+                                                int match;<br>
+                                                float avg;<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int i;<br>
+                                                struct player p[2];<br>
+                                                for (i = 0; i < 2; i++)<br>
+                                                {<br>
+                                                    cout << "Enter the Name, Country, no. of Matches played and Batting average of the player" << endl;<br>
+                                                    gets(p[i].name);<br>
+                                                    gets(p[i].country);<br>
+                                                    cin >> p[i].match;<br>
+                                                    cin >> p[i].avg;<br>
+                                                }<br>
+                                        
+                                                for (i = 0; i < 2; i++)<br>
+                                                    if (p[i].avg > 50)<br>
+                                                        cout << p[i].name << endl;<br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: There are 50 computers in an office. Every computer has following information CPU type, hard disk size. WAP to store details of all 50 computers and then print details of computers having hard disk size greater than 8 GB. </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                        
+                                            struct cpu<br>
+                                            {<br>
+                                                char type;<br>
+                                                int siz;<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int i;<br>
+                                                struct cpu c[3];<br>
+                                                for(i=0; i<3; i++)<br>
+                                                {<br>
+                                                    cout << "Enter the type & size:" << endl;<br>
+                                                    cin >> c[i].type;<br>
+                                                    cin >> c[i].siz;<br>
+                                                }<br>
+                                        
+                                                for(i=0; i<3; i++)<br>
+                                                {<br>
+                                                    if(c[i].siz > 8)<br>
+                                                    {<br>
+                                                        cout << "Type:" << c[i].type << " ";<br>
+                                                        cout << "Size:" << c[i].siz << endl;<br>
+                                                    }<br>
+                                                }<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+									</section>
+									<section>
+										<header>
+											<h3>Task 4: WAP to print array using pointer</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};<br>
+                                                int *ptr;<br>
+                                                ptr = arr;<br><br>
+                                        
+                                                for (int i = 0; i < 10; ptr++, i++)<br>
+                                                    cout << *ptr << endl;<br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: WAP to print string in reverse order using pointers </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            #include &lt;cstring&gt;<br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int n;<br>
+                                                char a[] = {"MPSTME"};<br>
+                                                char *ptr;<br>
+                                                ptr = a;<br>
+                                                n = strlen(a);<br>
+                                                ptr += n;<br>
+                                                for (int i = n; i >= 0; ptr--, i--)<br>
+                                                    cout << *ptr << endl;<br>
+                                        
+                                                return 0;<br>
+                                            }<br>
+                                        </p>                                        
+										<header>
+											<h3>Task 6: WAP to copy one string to another using pointer and display copied string-using pointer.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                char a[10];<br>
+                                                char b[10] = {"MPSTME"};<br>
+                                                char *ptr;<br>
+                                                ptr = b;<br>
+                                                for (int i = 0; i < 10; i++, ptr++)<br>
+                                                    a[i] = *ptr;<br>
+                                        
+                                                cout << "Copied string: " << a;<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>                                        
+										<header>
+											<h3>Task 7: WAP to find the number of vowels in entered string using pointer <br>
+                                                [eg - i/p India o/p : A-1, E-0, I-2, O-0, U-0] <br>
+                                            </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                int a = 0, e = 0, i = 0, o = 0, u = 0;<br>
+                                                char A[20];<br>
+                                                char *ptr;<br>
+                                                ptr = A;<br>
+                                                cout << "Enter the string: ";<br>
+                                                cin >> A;<br>
+                                                for (; *ptr != '\0'; ptr++)<br>
+                                                {<br>
+                                                    switch (*ptr)<br>
+                                                    {<br>
+                                                        case 'A':<br>
+                                                        case 'a':<br>
+                                                            a++;<br>
+                                                            break;<br>
+                                                        case 'E':<br>
+                                                        case 'e':<br>
+                                                            e++;<br>
+                                                            break;<br>
+                                                        case 'I':<br>
+                                                        case 'i':<br>
+                                                            i++;<br>
+                                                            break;<br>
+                                                        case 'O':<br>
+                                                        case 'o':<br>
+                                                            o++;<br>
+                                                            break;<br>
+                                                        case 'U':<br>
+                                                        case 'u':<br>
+                                                            u++;<br>
+                                                            break;<br>
+                                                        default:<br>
+                                                            break;<br>
+                                                    }<br>
+                                                }<br>
+                                                cout << "A:" << a << " E:" << e << " I:" << i << " O:" << o << " U:" << u;<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>                                        
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

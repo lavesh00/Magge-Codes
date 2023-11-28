@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+                                        <strong>Programming constructs 1 – D and 2 - D arrays </strong><br>
+                                        - It is a group of logically related data, stored in contiguous blocks of memory under a common name. <br>
+                                        - An array is homogeneous or similar types of data under a common name. <br>
+                                        - Data items or elements of arrays are separated by a subscript or index. <br>
+                                        - Array is an indirect pointer. <br>
+                                        - C++ supports the following arrays: <br>
+                                          - One-Dimensional Arrays <br>
+                                          - Two or Multi-Dimensional Arrays. <br>
+                                        - One-dimensional arrays are represented as a set of values in one row. <br>
+                                        - Multi-dimensional arrays are viewed as a table-containing data, i.e., rows & columns.
+                                    </p>                                        
+                                        
+                                    
+									
+									
+									<footer>
+										<a href="https://www.digitalocean.com/community/tutorials/two-dimensional-array-in-c-plus-plus" class="button">Learn More</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 06</h2>
+										<p>
+											Aim:  Programming using 1D Array & 2D array
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Write a program to multiply each element of an array by 5 and display the resultant array. 
+                                                 </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int c, i, arr[10];<br>
+                                            &nbsp;&nbsp;cout << "Enter the number of elements in Array: ";<br>
+                                            &nbsp;&nbsp;cin >> c;<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Array:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cin >> arr[i];<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << (arr[i] * 5) << " &ensp;";<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                                
+                                        
+                                        
+					
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Write a program to find and display odd & even numbers from an array (1D) separately. 
+                                                </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int c, i, arr[10];<br>
+                                            &nbsp;&nbsp;cout << "Enter the number of elements in Array: ";<br>
+                                            &nbsp;&nbsp;cin >> c;<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Array:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cin >> arr[i];<br>
+                                            &nbsp;&nbsp;cout << "Odd numbers: ";<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;if (arr[i] % 2 != 0)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << arr[i] << "&ensp; ";<br>
+                                            &nbsp;&nbsp;cout << endl << "Even numbers: ";<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;if (arr[i] % 2 == 0)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << arr[i] << "&ensp; ";<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Write a program to copy one 1D array into another 1D array and display copied array.    
+                                            
+                                      </h3>
+										</header>
+                                        <p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int c, i, arr1[10], arr2[10];<br>
+                                            &nbsp;&nbsp;cout << "Enter the number of elements in Array: ";<br>
+                                            &nbsp;&nbsp;cin >> c;<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Array:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cin >> arr1[i];<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;arr2[i] = arr1[i];<br>
+                                            &nbsp;&nbsp;cout << "Copied Array:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << arr2[i] << "&ensp; ";<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4:	Implement a program to reverse elements of 1D array and display it.		 <br>         
+                                                &ensp;&ensp;$ <br>
+                                                &ensp;$&ensp;$ <br>
+                                        $&ensp;$&ensp;$ <br>
+                                        </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int c, i, j;<br>
+                                            &nbsp;&nbsp;cout << "Enter the number of elements in Array: ";<br>
+                                            &nbsp;&nbsp;cin >> c;<br>
+                                            &nbsp;&nbsp;int arr1[c];<br>
+                                            &nbsp;&nbsp;int arr2[c];<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Array:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cin >> arr1[i];<br>
+                                            &nbsp;&nbsp;for (i = c - 1, j = 0; i >= 0; i--, j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;arr2[i] = arr1[j];<br>
+                                            &nbsp;&nbsp;cout << "Reversed Array:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << arr2[i] << " &ensp;";<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Develop a program to perform sum of elements of matrix (2D array) of order MXN.	
+                                                </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int c, i, j, s;<br>
+                                            &nbsp;&nbsp;cout << "Enter the size of Matrix: ";<br>
+                                            &nbsp;&nbsp;cin >> c;<br>
+                                            &nbsp;&nbsp;int arr[c][c];<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Matrix:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin >> arr[i][j];<br>
+                                            &nbsp;&nbsp;for (i = 0, s = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s = s + arr[i][j];<br>
+                                            &nbsp;&nbsp;cout << "Sum is: " << s;<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                        
+										
+										<header>
+											<h3>Task 6: Develop a program to find sum of elements of lower triangular matrix of order MxN.</h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int c, i, j, s;<br>
+                                            &nbsp;&nbsp;cout << "Enter the size of Matrix: ";<br>
+                                            &nbsp;&nbsp;cin >> c;<br>
+                                            &nbsp;&nbsp;int arr[c][c];<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Matrix:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin >> arr[i][j];<br>
+                                            &nbsp;&nbsp;for (i = 0, s = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ((i + j) >= c)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s = s + arr[i][j];<br>
+                                            &nbsp;&nbsp;cout << "Sum is: " << s;<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                        
+										
+										<header>
+											<h3>Task 7: Write a program to perform addition of two matrix (2D array) and display the resultant matrix. </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int c, i, j;<br>
+                                            &nbsp;&nbsp;cout << "Enter the size of Matrix: ";<br>
+                                            &nbsp;&nbsp;cin >> c;<br>
+                                            &nbsp;&nbsp;int m1[c][c];<br>
+                                            &nbsp;&nbsp;int m2[c][c];<br>
+                                            &nbsp;&nbsp;int ms[c][c];<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Matrix 1:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin >> m1[i][j];<br>
+                                            &nbsp;&nbsp;cout << endl << "Enter the elements of Matrix 2:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin >> m2[i][j];<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ms[i][j] = m1[i][j] + m2[i][j];<br>
+                                            &nbsp;&nbsp;cout << "Sum of the two Matrices:" << endl;<br>
+                                            &nbsp;&nbsp;for (i = 0; i < c; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < c; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (ms[i][j] < 10)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << "   ";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (ms[i][j] >= 10 && ms[i][j] < 100)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << "  ";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (ms[i][j] >= 100 && ms[i][j] < 1000)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << " ";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << ms[i][j] << " ";<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;cout << endl;<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+                                        
+										
+										<header>
+											<h3>Task 8: Implement a program to find the largest element 3X3 matrix. </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            <br>
+                                            int main()<br>
+                                            {<br>
+                                            &nbsp;&nbsp;int N[3][3], a;<br>
+                                            &nbsp;&nbsp;for (int i = 0; i <= 2; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j <= 2; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin >> N[i][j];<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;a = N[0][0];<br>
+                                            &nbsp;&nbsp;for (int i = 1; i <= 2; i++)<br>
+                                            &nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j <= 2; j++)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (N[i][j] > a)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a = N[i][j];<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                            &nbsp;&nbsp;}<br>
+                                            <br>
+                                            &nbsp;&nbsp;cout << "The biggest no is " << a << endl;<br>
+                                            &nbsp;&nbsp;return 0;<br>
+                                            }
+                                            </p>
+                                            
+                                            
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

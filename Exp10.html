@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Magge Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Magge Codes</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li>
+									<a href="#">Experiments ↓</a>
+									<ul>
+										<li><a href="Exp02.html">Experiment 02</a></li>
+										<li><a href="Exp03.html">Experiment 03</a></li>
+										<li><a href="Exp04.html">Experiment 04</a></li>
+										<li><a href="Exp05.html">Experiment 05</a></li>
+										<li><a href="Exp06.html">Experiment 06</a></li>
+										<li><a href="Exp07.html">Experiment 07</a></li>
+										<li><a href="Exp08.html">Experiment 08</a></li>
+										<li><a href="Exp09.html">Experiment 09</a></li>
+										<li><a href="Exp10.html">Experiment 10</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Definations and all Study material</h3>
+									</header>
+									<p>
+                                        <p><strong>In C++, a constructor is a special member function that is automatically called when an object of a class is created. Constructors are used to initialize the object's data members and set up the initial state of the object. Constructors have the same name as the class and do not have a return type, not even void.</strong></p>
+
+                                        <p><strong>There are several types of constructors in C++:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <strong>Default Constructor:</strong>
+                                                <ul>
+                                                    <li>A default constructor is a constructor that takes no arguments.</li>
+                                                    <li>If a class does not have any constructors defined, the compiler automatically generates a default constructor.</li>
+                                                    <li>If you define any constructor (including a parameterized constructor), the default constructor is not automatically generated.</li>
+                                                </ul>
+                                                <pre>
+    <code>class MyClass {
+     public:
+      // Default Constructor
+    MyClass() {
+      // Initialization code 
+      goes here
+    }
+    };</code>
+                                                </pre>
+                                            </li>
+                                            <li>
+                                                <strong>Parameterized Constructor:</strong>
+                                                <ul>
+                                                    <li>A parameterized constructor is a constructor with parameters.</li>
+                                                    <li>It allows you to initialize the object with specific values at the time of creation.</li>
+                                                </ul>
+                                                <pre>
+    <code>class Point {
+    private:
+    int x, y;
+                                        
+    public:
+    // Parameterized Constructor
+    Point(int xVal, int yVal) {
+        x = xVal;
+        y = yVal;
+    }
+    };</code>
+                                                </pre>
+                                            </li>
+                                            <li>
+                                                <strong>Copy Constructor:</strong>
+                                                <ul>
+                                                    <li>A copy constructor is used to create a new object as a copy of an existing object.</li>
+                                                    <li>It takes a reference to an object of the same class as a parameter.</li>
+                                                </ul>
+                                                <pre>
+    <code>class MyClass {
+    public:
+      // Copy Constructor
+    MyClass(const MyClass &amp;obj) 
+    {
+      // Copy the data members 
+      from obj to the current 
+      object
+    }
+    };</code>
+                                                </pre>
+                                            </li>
+                                            <li>
+                                                <strong>Constructor Overloading:</strong>
+                                                <ul>
+                                                    <li>Like regular functions, constructors can be overloaded, meaning you can have multiple constructors in a class with different parameter lists.</li>
+                                                    <li>The appropriate constructor is called based on the arguments provided during the object creation.</li>
+                                                </ul>
+                                                <pre>
+    <code>class Box {
+    public:
+      // Constructor with 
+      no parameters
+        Box() {
+      // Initialization code 
+      for default constructor
+    }
+                                        
+      // Constructor with 
+      parameters
+    Box(int l, int w, int h) {
+      // Initialization code
+       for parameterized 
+       constructor
+    }
+    };</code>
+                                                </pre>
+                                            </li>
+                                        </ol>
+                                        
+
+                                    </p>
+									<footer>
+										<a href="https://www.programiz.com/cpp-programming/constructors/" class="button">Learn More</a>
+									</footer>
+								</section>
+								<hr />
+								
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2>Experiment 10</h2>
+										<p>
+											AIM: Programming using object-oriented programming (using data members, member functions, constructors, overloading & inheritance)
+										</p>
+									</header>
+									<section>
+										<header>
+											<h3>Task 1: Class “Employee” has data members: Emp_id, Emp_name and Emp_sal and this class uses a parameterized constructor to accept the details of 2 employees and display the results using the display () function.
+                                                </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br>
+                                            #include &lt;cstring&gt;<br><br>
+                                        
+                                            class Employee<br>
+                                            {<br>
+                                                int Emp_id;<br>
+                                                char Emp_name[20];<br>
+                                                float Emp_salary;<br>
+                                            public:<br>
+                                                Employee(int x, char y[], float z)<br>
+                                                {<br>
+                                                    Emp_id = x;<br>
+                                                    Emp_salary = z;<br>
+                                                    strcpy(Emp_name, y);<br>
+                                                }<br>
+                                                void display()<br>
+                                                {<br>
+                                                    cout << endl << "Employee ID: " << Emp_id << endl << "Employee Name: " << Emp_name << endl << "Emp Salary: " << Emp_salary << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                Employee e1(1, "Lorem", 50000);<br>
+                                                Employee e2(2, "Ipsum", 75000);<br>
+                                                e1.display();<br>
+                                                e2.display();<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+
+									</section>
+									<section>
+										<header>
+											<h3>Task 2: Define class Complex with real and imaginary as data members, define default and parameterized constructor to initialize two complex numbers. Define add (Complex, Complex) member function to add two complex numbers and show( ) function to display both the complex numbers with their addition.  </h3>
+										</header>
+										<p>
+    #include &lt;iostream&gt;<br>
+    using namespace std;<br><br>
+
+    class Complex<br>
+    {<br>
+        float real;<br>
+        float imag;<br>
+    public:<br>
+        Complex()<br>
+        {<br>
+            real = 0.0;<br>
+            imag = 0.0;<br>
+        }<br>
+        void read()<br>
+        {<br>
+            cout << "Enter the Real And Imaginary parts:" << endl;<br>
+            cin >> real >> imag;<br>
+        }<br>
+        void add(Complex v1, Complex v2)<br>
+        {<br>
+            real = v1.real + v2.real;<br>
+            imag = v1.imag + v2.imag;<br>
+        }<br>
+        void display()<br>
+        {<br>
+            cout << real << "+" << imag << "i";<br>
+        }<br>
+    };<br><br>
+
+    int main()<br>
+    {<br>
+        Complex v1, v2, v3;<br>
+        v1.read();<br>
+        v2.read();<br>
+        v3.add(v1, v2);<br>
+        v3.display();<br>
+        return 0;<br>
+    }<br>
+</p>
+
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 3: Rewrite above question to add two complex numbers using overloaded + operator. </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            class Complex<br>
+                                            {<br>
+                                                float real;<br>
+                                                float imag;<br>
+                                            public:<br>
+                                                Complex()<br>
+                                                {<br>
+                                                    real = 0.0;<br>
+                                                    imag = 0.0;<br>
+                                                }<br>
+                                                void input()<br>
+                                                {<br>
+                                                    cout << "Enter the complex number:";<br>
+                                                    cin >> real >> imag;<br>
+                                                }<br>
+                                                Complex operator+(const Complex obj)<br>
+                                                {<br>
+                                                    Complex temp;<br>
+                                                    temp.real = real + obj.real;<br>
+                                                    temp.imag = imag + obj.imag;<br>
+                                                    return temp;<br>
+                                                }<br>
+                                                void output()<br>
+                                                {<br>
+                                                    if (imag < 0)<br>
+                                                        cout << "Output Complex number: " << real << imag << "i";<br>
+                                                    else<br>
+                                                        cout << "Output Complex number: " << real << "+" << imag << "i";<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                Complex complex1, complex2, result;<br>
+                                                cout << "Enter first number:" << endl;<br>
+                                                complex1.input();<br>
+                                                cout << "Enter second number:" << endl;<br>
+                                                complex2.input();<br>
+                                                result = complex1 + complex2;<br>
+                                                result.output();<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 4: Create a class rectangle with (length, width), derive a class box with additional member (depth). In both the classes write parameterized constructor to initialize data member and area ( ) function to find area. Define main ( ) and create appropriate objects to call area ( ) function. </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            class rectangle<br>
+                                            {<br>
+                                            public:<br>
+                                                int length;<br>
+                                                int width;<br>
+                                                rectangle()<br>
+                                                {<br>
+                                                    length = 1;<br>
+                                                    width = 1;<br>
+                                                }<br>
+                                                rectangle(int m, int n)<br>
+                                                {<br>
+                                                    length = m;<br>
+                                                    width = n;<br>
+                                                }<br>
+                                                void area()<br>
+                                                {<br>
+                                                    cout << "Area of rectangle will be: " << length * width << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            class box : public rectangle<br>
+                                            {<br>
+                                            public:<br>
+                                                int depth;<br>
+                                                box(int m, int n, int o)<br>
+                                                {<br>
+                                                    length = m;<br>
+                                                    width = n;<br>
+                                                    depth = o;<br>
+                                                }<br>
+                                                void area()<br>
+                                                {<br>
+                                                    cout << "Area for box will be: " << length * width * depth << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                rectangle r1(3, 2);<br>
+                                                box r2(3, 2, 4);<br>
+                                                r1.area();<br>
+                                                r2.area();<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+                                        
+										
+									</section>
+									<section>
+										<header>
+											<h3>Task 5: Declare a class employee having data members as id, name and member function as getData( ) & display( ). Derive class manager from employee class. Manager class has data members as salary and member functions as getdata( ) & display( ). Again, derive class project manager from manager. Project manager class have data members as total experience, number of projects handled and member function as getdata() & display(). Write a program using multilevel inheritance to display all details of project manager.  </h3>
+										</header>
+										<p>
+                                            #include &lt;iostream&gt;<br>
+                                            using namespace std;<br><br>
+                                        
+                                            class employee<br>
+                                            {<br>
+                                            public:<br>
+                                                int id;<br>
+                                                char name[20];<br>
+                                                void getdata()<br>
+                                                {<br>
+                                                    cout << "Enter id:";<br>
+                                                    cin >> id;<br>
+                                                    cout << "Enter name:";<br>
+                                                    cin >> name;<br>
+                                                }<br>
+                                                void display()<br>
+                                                {<br>
+                                                    cout << "For ID:" << id << endl;<br>
+                                                    cout << "Name is: " << name << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            class manager : public employee<br>
+                                            {<br>
+                                            public:<br>
+                                                employee e1;<br>
+                                                int salary;<br>
+                                                void getdata()<br>
+                                                {<br>
+                                                    e1.getdata();<br>
+                                                    cout << "Enter the salary:";<br>
+                                                    cin >> salary;<br>
+                                                }<br>
+                                                void display()<br>
+                                                {<br>
+                                                    e1.display();<br>
+                                                    cout << "Salary is: " << salary << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            class projectmanager : public manager<br>
+                                            {<br>
+                                            public:<br>
+                                                manager m1;<br>
+                                                int total_exp;<br>
+                                                int no_of_pro;<br>
+                                                void getdata()<br>
+                                                {<br>
+                                                    m1.getdata();<br>
+                                                    cout << "Enter Total Experience:";<br>
+                                                    cin >> total_exp;<br>
+                                                    cout << "Enter Number of Project(s):";<br>
+                                                    cin >> no_of_pro;<br>
+                                                }<br>
+                                                void display()<br>
+                                                {<br>
+                                                    m1.display();<br>
+                                                    cout << "Total Experience is: " << total_exp << endl;<br>
+                                                    cout << "Number of Project(s): " << no_of_pro << endl;<br>
+                                                }<br>
+                                            };<br><br>
+                                        
+                                            int main()<br>
+                                            {<br>
+                                                projectmanager p1;<br>
+                                                p1.getdata();<br>
+                                                p1.display();<br>
+                                                return 0;<br>
+                                            }<br>
+                                        </p>
+                                        
+                                        
+									</section>
+								</article>
+							</div>
+						</div>
+						<hr />
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+                                <section class="contact">
+                                    <header>
+                                        <h3>Do you want to contact us?</h3>
+                                    </header>
+                                    <p>Phone(1) : 8788169594 <br>
+                                        Phone(2) : 9309416105 <br>
+                                        Email : laveshpatil103@gmail.com
+                                    </p>
+                                    <ul class="icons">
+                                        <li><a href="https://x.com/LetsDooIt01?t=eOg7Xsq2xSv-umy3vBlGWQ&s=08" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="https://github.com/lavesh00" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="https://instagram.com/lavesh1777?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lavesh-patil-76b763299/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                                    </ul>
+                                </section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Lavesh and Kundan and HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
