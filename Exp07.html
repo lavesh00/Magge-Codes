@@ -433,37 +433,32 @@
 										<header>
 											<h3>Task 7: Write a program to print Fibonacci series up to n using recursion.  </h3>
 										</header>
-										<p>
-                                            #include &lt;iostream&gt;<br>
-                                            using namespace std;<br>
-                                            int fib(int x);<br>
-                                            int main()<br>
-                                            {<br>
-                                                int n;<br>
-                                                cout &lt;&lt; "Enter a number to print Fibonacci numbers up to: ";<br>
-                                                cin >> n;<br>
-                                                fib(n);<br>
-                                                return 0;<br>
-                                            }<br>
-                                            int fib(int x)<br>
-                                            {<br>
-                                                int i, n1, n2, n3;<br>
-                                                for (i = 0, n1 = 0, n2 = 1; i <= x; i++)<br>
+							<p>
+                                                #include &lt;iostream&gt;<br>
+                                                using namespace std;<br><br>
+
+                                                int fib(int n)<br>
                                                 {<br>
-                                                    if (i == 0)<br>
-                                                        cout &lt;&lt; "0 ";<br>
-                                                    else if (i == 1)<br>
-                                                        cout &lt;&lt; "1 ";<br>
-                                                    else<br>
-                                                    {<br>
-                                                        n3 = n1 + n2;<br>
-                                                        cout &lt;&lt; n3 &lt;&lt; " ";<br>
-                                                        n1 = n2;<br>
-                                                        n2 = n3;<br>
-                                                    }<br>
+                                                if (n == 0)<br>
+                                                return 0;<br>
+                                                if (n == 1)<br>
+                                                return 1;<br>
+                                                else<br>
+                                                return fib(n - 1) + fib(n - 2);<br>
+                                                 }<br><br>
+
+                                                int main()<br>
+                                                 {<br>
+                                                  int n, i;<br>
+                                                  cout << "Enter the number: ";<br>
+                                                cin >> n;<br>
+                                                for (i = 0; i <= n; i++)<br>
+                                                cout << fib(i) << ", ";<br>
+                                                 return 0;<br>
                                                 }<br>
-                                            }
-                                            </p>
+                                                 </p>
+										
+                                              
                                             
               
 										
